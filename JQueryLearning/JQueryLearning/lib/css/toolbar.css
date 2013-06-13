@@ -1,0 +1,316 @@
+/*********************************
+ * ####### Tool Bar CSS ######## *
+ ********************************/
+
+/****************************
+ * General styles           *
+ ***************************/
+
+/* Default styles for any ribbon panel */
+div.ribbonPanel {
+    margin: auto;
+    min-height: 70px;
+    float: left;
+    margin-right: 2px;
+    margin-bottom: 0px;
+}
+
+/* Styles for the description of a single ribbon panel */
+.ribbonPanelDescription {
+    padding: 0;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin: 0;
+    text-align: center;
+    border: 0;
+    border-top: 1px solid #AAAAAA !important;
+    cursor: default !important;
+    line-height: normal !important;
+    margin-bottom: 0 !important;
+    font-weight: bold !important;
+}
+
+/* The tool bars full screen icon */
+.toggleFullScreenIcon {
+    float: right; 
+    width: 32px !important;
+    height: 18px;
+    top: -21px;
+    left: -1px;
+}
+
+/****************************
+ * Action panel size styles *
+ ***************************/
+
+/* Quick Actions Panel CSS */
+div.quickIcons {
+    float: left;
+    margin-right: 3px;
+    margin-top: -2px;
+    padding-left: 1px;
+    padding-top: 1px;
+}
+
+tr.quickPanel {
+    height:20px;
+    margin:0;
+    padding:0;
+}
+
+div.ribbonPanelquickPanel {
+    vertical-align: top;
+}
+
+tr.quickPanel td {
+    width: 20px;
+    height: 20px;
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+
+tr.quickPanel td.eongbutton div { 
+    width: 18px;
+    height: 18px;
+    padding: 0;
+    margin-right: 1px;
+}
+
+tr.quickPanel button.buttonImage {
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    margin-top: -1px;
+    margin-left: -1px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+/* Small Ribbon Panel CSS */
+tr.smallPanel {
+    height:24px;
+    margin:0;
+    padding:0;
+}
+
+div.ribbonPanelsmallPanel {
+    vertical-align: top;
+}
+
+body div.ribbonPanelsmallPanel p {
+    margin-top: 16px !important;
+}
+
+tr.smallPanel td {
+    width: 24px;
+    height: 24px;
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+
+tr.smallPanel td.eongbutton div {
+    width:22px;
+    height: 22px;
+    padding: 0;
+    margin: auto;
+}
+
+tr.smallPanel button.buttonImage {
+    height: 24px;
+    width: 24px;
+    margin: 0;
+    margin-top: -1px;
+    margin-left: -1px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+/* Medium Ribbon Panel CSS */
+tr.mediumPanel {
+    height:32px;
+    margin:0;
+    padding:0;
+}
+
+td.ribbonPanelmediumPanel {
+    vertical-align: top;
+}
+
+body div.ribbonPanelmediumPanel p {
+    margin-top: 0px !important;
+}
+
+tr.mediumPanel td {
+    width: 32px;
+    height: 32px;
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+
+tr.mediumPanel td.eongbutton div {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    margin: auto;
+}
+
+tr.mediumPanel button.buttonImage {
+    height: 32px;
+    width: 32px;
+    margin: 0;
+    margin-top: -1px;
+    margin-left: -1px;
+    padding: 0;
+    border: 0px;
+    outline: 0px;
+    background-color: transparent;
+}
+
+/* Large Ribbon Panel CSS */
+tr.largePanel {
+    height:64px;
+    margin: 0;
+    padding: 0;
+}
+
+td.ribbonPanellargePanel {
+    vertical-align: top;
+}
+
+body div.ribbonPanellargePanel p {
+    margin-top: 2px !important;
+}
+
+tr.largePanel td {
+    width: 64px;
+    height: 64px;
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+
+tr.largePanel td.eongbutton div {
+    width: 62px;
+    height: 62px;
+    padding: 0;
+    margin: auto;
+}
+
+tr.largePanel button.buttonImage {
+    height: 64px;
+    width: 64px;
+    margin: 0;
+    margin-top: -1px;
+    margin-left: -1px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+/* Medium tool bar buttons integrated at other position than tool bar*/
+.mediumToolBarButtonExt {
+    width: 24px;
+    height: 24px;
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+
+.mediumToolBarButtonExt div {
+    width: 22px;
+    height: 22px;
+    padding: 0;
+}
+
+.mediumToolBarButtonExt button.buttonImage {
+    height: 24px;
+    width: 24px;
+    margin: 0;
+    margin-top: -1px;
+    margin-left: -1px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+/* Medium tool bar buttons integrated at other position than tool bar*/
+.smallToolBarButtonExt {
+    width: 20px;
+    height: 20px;
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+
+.smallToolBarButtonExt div {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+}
+
+.smallToolBarButtonExt button.buttonImage {
+    height: 20px;
+    width: 20px;
+    margin: 0;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding: 0;
+    border: 0;
+    background-color: transparent;
+}
+
+/* Toolbar dropdown CSS */
+tr.dropdownPanel {
+    height:24px;
+    margin:0;
+    padding:0;
+}
+
+div.ribbonPaneldropdownPanel {
+    vertical-align: top;
+}
+
+body div.ribbonPaneldropdownPanel p {
+    margin-top: 16px !important;
+}
+
+tr.dropdownPanel td {
+    height: 24px;
+    border: medium none;
+    margin: 0;
+    padding: 0;
+}
+
+tr.dropdownPanel td.eongbutton div {
+    height: 22px;
+    padding: 0;
+    margin: auto;
+}
+
+
+/* IE 8 Hacks for toolbar icon active state */
+
+tr.dropdownPanel td.eongbutton:active {
+    -ms-background-position-x: 1px;
+    -ms-background-position-y: -29px;
+}
+
+tr.largePanel td.eongbutton:active {
+    -ms-background-position-x: 1px;
+    -ms-background-position-y: -63px;
+}
+
+tr.mediumPanel td.eongbutton:active {
+    -ms-background-position-x: 1px;
+    -ms-background-position-y: -31px;
+}
+
+tr.smallPanel td.eongbutton:active {
+    -ms-background-position-x: 1px;
+    -ms-background-position-y: -23px;
+}

@@ -1,0 +1,70 @@
+<ul>
+    <li>
+        <a href="#insertHyperLink_{containerId}">[L_HYPERLINK_PROPERTIES_TAB]</a>    
+    </li>
+</ul>
+<div id="insertHyperLink_{containerId}" class="dialogPanelContainer">
+    <table class="dialogPanels">
+        <tr>
+            <td class="ribbonPanel ui-widget-content">
+                <div class="dialogPanelInnerContainer">
+                    <table border="0" cellspacing="0">
+                        <tr>
+                            <td colspan="2"><p>[L_CHANGE_HYPERLINK_DESCRIPTION]</p></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="table_rows">[L_INSERT_HYPERLINK_TEXT]</label>
+                            </td>
+                            <td>
+                                <input type="text" size="30" id="hyperlink_text_field_{containerId}" name="rows" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="table_rows">[L_INSERT_HYPERLINK_URL]</label>
+                            </td>
+                            <td>
+                                <input type="text" size="30" id="hyperlink_url_field_{containerId}" name="rows" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button id="hyperlink_open_file_button_{containerId}" title="{L_OPEN_FILECHOOSER}">[L_OPEN_FILECHOOSER]</button>
+                                <button id="link_open_webdav_button_{containerId}"	title="{L_WEBDAV_OPEN}">[L_WEBDAV_OPEN]</button>
+                            </td>
+                        </tr>
+                    </table>      
+                </div>
+            </td>
+            <td class="ribbonPanel ui-widget-content">
+                <div class="dialogPanelInnerContainer">
+                    <table border="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <label for="table_rows">[L_INSERT_HYPERLINK_TARGET]</label>
+                            </td>
+                            <td>
+                                <select id="targetChooser_{containerId}">
+                                    <option value="">[L_INSERT_HYPERLINK_TARGET_DEFAULT]</option>
+                                    <option value="_self">[L_INSERT_HYPERLINK_TARGET_SELF]</option>
+                                    <option value="_top">[L_INSERT_HYPERLINK_TARGET_WHOLEPAGE]</option>
+                                    <option value="_blank">[L_INSERT_HYPERLINK_TARGET_BLANK]</option>
+                                    <option value="_parent">[L_INSERT_HYPERLINK_TARGET_PARENT]</option>
+                                </select>
+                            </td>
+                         </tr>
+                         <tr>
+                            <td>
+                                <label for="table_rows">[L_INSERT_HYPERLINK_TITLE]</label>
+                            </td>
+                            <td>
+                                <input type="text" size="23" id="hyperlink_title_field_{containerId}" name="rows" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

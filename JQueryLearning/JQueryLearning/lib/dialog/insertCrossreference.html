@@ -1,0 +1,89 @@
+<div id="insertCrossreferenceSource_{containerId}" class="dialogPanelContainer">
+    <table class="dialogPanels">
+        <tr>           
+            <td class="ribbonPanel ui-widget-content align-top">
+                
+                <div class="dialogPanelInnerContainer">
+                    <table class="crossreferences-ui-panel">
+                        <tr>
+                            <td class="align-top crossreferences-ui-northwest" rowspan="2">
+                                <fieldset>
+                                    <legend>[L_ELEMENT_TYPE]</legend>
+                                    <table border="0" cellspacing="0">
+                                        <tr>
+                                            <td>
+                                                <ol class="selectableList" id="reference_element_types_{containerId}">
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                    </table> 
+                                </fieldset>
+                            </td>
+                            <td class="align-top crossreferences-ui-northeast">
+                                <fieldset>
+                                    <legend>[L_REFERENCE_TYPE]</legend>
+                                    <table border="0" cellspacing="0">
+                                        <tr>
+                                            <td>
+                                                <input type="radio" name="source_radio_{containerId}" value="0" checked="true" />
+                                            </td>
+                                            <td>
+                                                <label for="table_rows">[L_REFERENCE_ELEMENT_NUMBER]</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" name="source_radio_{containerId}" value="1" />
+                                            </td>
+                                            <td>
+                                                <label for="table_rows">[L_REFERENCE_ELEMENT_CONTENT]</label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="radio" name="source_radio_{containerId}" value="2" />
+                                            </td>
+                                            <td>
+                                                <label for="table_rows">[L_REFERENCE_PAGE_NUMBER]</label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </fieldset>
+                            </td>
+                            <td class="align-top crossreferences-ui-northeast">
+                                <fieldset>
+                                    <legend>[L_REFERENCE_OPTIONS]</legend>
+                                    <table border="0" cellspacing="0"> 
+                                        <tr>
+                                            <td>
+                                                <input type="checkbox" id="reference_options_hyperlink_{containerId}" name="rows" checked="true" />
+                                            </td>
+                                            <td>
+                                                <label for="table_rows">[L_REFERENCE_OPTION_HYPERLINK]</label>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </fieldset>
+                            </td>
+                        </tr> 
+                        <tr>
+                            <td class="align-top crossreferences-ui-southeast" colspan="2">
+                                <fieldset>
+                                    <legend>[L_REFERENCE_ELEMENT]</legend>
+                                    <table border="0" cellspacing="0">
+                                        <tr>
+                                            <td>
+                                                <ol class="selectableList" id="reference_blockelements_{containerId}">
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </fieldset>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

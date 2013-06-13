@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet2" targetNamespace="http://tempuri.org/DataSet2.xsd" xmlns:mstns="http://tempuri.org/DataSet2.xsd" xmlns="http://tempuri.org/DataSet2.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Web.config" AppSettingsPropertyName="CVENT_PRODConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="CVENT_PRODConnectionString (Web.config)" ParameterPrefix="@" PropertyReference="AppConfig.System.Configuration.ConfigurationManager.0.ConnectionStrings.CVENT_PRODConnectionString.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet2" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet2" msprop:Generator_UserDSName="DataSet2">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="GRAPHIC_IMAGE" msprop:Generator_TableClassName="GRAPHIC_IMAGEDataTable" msprop:Generator_TableVarName="tableGRAPHIC_IMAGE" msprop:Generator_TablePropName="GRAPHIC_IMAGE" msprop:Generator_RowDeletingName="GRAPHIC_IMAGERowDeleting" msprop:Generator_UserTableName="GRAPHIC_IMAGE" msprop:Generator_RowChangingName="GRAPHIC_IMAGERowChanging" msprop:Generator_RowEvHandlerName="GRAPHIC_IMAGERowChangeEventHandler" msprop:Generator_RowDeletedName="GRAPHIC_IMAGERowDeleted" msprop:Generator_RowEvArgName="GRAPHIC_IMAGERowChangeEvent" msprop:Generator_RowChangedName="GRAPHIC_IMAGERowChanged" msprop:Generator_RowClassName="GRAPHIC_IMAGERow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="acct_id" msprop:Generator_ColumnVarNameInTable="columnacct_id" msprop:Generator_ColumnPropNameInRow="acct_id" msprop:Generator_ColumnPropNameInTable="acct_idColumn" msprop:Generator_UserColumnName="acct_id" type="xs:int" />
+              <xs:element name="image_stub" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnimage_stub" msprop:Generator_ColumnPropNameInRow="image_stub" msprop:Generator_ColumnPropNameInTable="image_stubColumn" msprop:Generator_UserColumnName="image_stub" type="xs:string" />
+              <xs:element name="image_category_id" msprop:Generator_ColumnVarNameInTable="columnimage_category_id" msprop:Generator_ColumnPropNameInRow="image_category_id" msprop:Generator_ColumnPropNameInTable="image_category_idColumn" msprop:Generator_UserColumnName="image_category_id" type="xs:short" />
+              <xs:element name="image_name" msprop:Generator_ColumnVarNameInTable="columnimage_name" msprop:Generator_ColumnPropNameInRow="image_name" msprop:Generator_ColumnPropNameInTable="image_nameColumn" msprop:Generator_UserColumnName="image_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="image_file_name" msprop:Generator_ColumnVarNameInTable="columnimage_file_name" msprop:Generator_ColumnPropNameInRow="image_file_name" msprop:Generator_ColumnPropNameInTable="image_file_nameColumn" msprop:Generator_UserColumnName="image_file_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="image_alt_text" msprop:Generator_ColumnVarNameInTable="columnimage_alt_text" msprop:Generator_ColumnPropNameInRow="image_alt_text" msprop:Generator_ColumnPropNameInTable="image_alt_textColumn" msprop:Generator_UserColumnName="image_alt_text">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="image_seqn" msprop:Generator_ColumnVarNameInTable="columnimage_seqn" msprop:Generator_ColumnPropNameInRow="image_seqn" msprop:Generator_ColumnPropNameInTable="image_seqnColumn" msprop:Generator_UserColumnName="image_seqn" type="xs:short" />
+              <xs:element name="image_desc" msprop:Generator_ColumnVarNameInTable="columnimage_desc" msprop:Generator_ColumnPropNameInRow="image_desc" msprop:Generator_ColumnPropNameInTable="image_descColumn" msprop:Generator_UserColumnName="image_desc">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="300" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="folder_stub" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnfolder_stub" msprop:Generator_ColumnPropNameInRow="folder_stub" msprop:Generator_ColumnPropNameInTable="folder_stubColumn" msprop:Generator_UserColumnName="folder_stub" type="xs:string" />
+              <xs:element name="active_flag" msprop:Generator_ColumnVarNameInTable="columnactive_flag" msprop:Generator_ColumnPropNameInRow="active_flag" msprop:Generator_ColumnPropNameInTable="active_flagColumn" msprop:Generator_UserColumnName="active_flag" type="xs:short" />
+              <xs:element name="image_to_be_deleted_flag" msprop:Generator_ColumnVarNameInTable="columnimage_to_be_deleted_flag" msprop:Generator_ColumnPropNameInRow="image_to_be_deleted_flag" msprop:Generator_ColumnPropNameInTable="image_to_be_deleted_flagColumn" msprop:Generator_UserColumnName="image_to_be_deleted_flag" type="xs:short" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:GRAPHIC_IMAGE" />
+      <xs:field xpath="mstns:acct_id" />
+      <xs:field xpath="mstns:image_stub" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

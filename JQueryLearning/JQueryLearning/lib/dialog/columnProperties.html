@@ -1,0 +1,71 @@
+<ul>
+    <li>
+        <a href="#columnProperties_{containerId}">[L_COLUMNPROPERTIES_TAB]</a>    
+    </li>
+</ul>
+<div id="columnProperties_{containerId}" class="dialogPanelContainer">
+    <table class="dialogPanels">
+        <tr>
+            <td class="ribbonPanel ui-widget-content">
+                <div class="dialogPanelInnerContainer">
+                    <table border="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <label for="table_width">[L_TABLEDIALOG_COLUMNWIDTH]</label>
+                            </td>
+                            <td>
+                                <input type="text" size="5" id="columnproperties_column_width_{containerId}" name="table_width" value="" />
+                                <select id="columnproperties_column_width_unit_{containerId}">
+                                    <option value="percent" selected=selected>[L_WIDTH_BY_PERCENT]</option>
+                                    <option value="px">[L_WIDTH_BY_PX]</option>
+                                    <option value="em">[L_WIDTH_BY_EM]</option>
+                                    <option value="cm">[L_WIDTH_BY_CM]</option>
+                                    <option value="mm">[L_WIDTH_BY_MM]</option>
+                                    <option value="in">[L_WIDTH_BY_IN]</option>
+                                    <option value="pt">[L_WIDTH_BY_PT]</option>
+                                    <option value="pc">[L_WIDTH_BY_PC]</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="table_width">[L_COLUMNPROPERTIES_ALIGNMENT]</label>
+                            </td>
+                            <td>
+                                <select id="columnproperties_alignment_{containerId}">
+                                    <option value="default" selected=selected>[L_ALIGNMENT_DEFAULT]</option>
+                                    <option value="left">[L_ALIGNMENT_LEFT]</option>
+                                    <option value="center">[L_ALIGNMENT_CENTER]</option>
+                                    <option value="right">[L_ALIGNMENT_RIGHT]</option>
+                                    <option value="justify">[L_ALIGNMENT_JUSTIFY]</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="table_width">[L_COLUMNPROPERTIES_VERTICAL_ALIGNMENT]</label>
+                            </td>
+                            <td>
+                                <select id="columnproperties_vertical_alignment_{containerId}">
+                                    <option value="default" selected=selected>[L_VERTICAL_ALIGNMENT_DEFAULT]</option>
+                                    <option value="top">[L_VERTICAL_ALIGNMENT_TOP]</option>
+                                    <option value="middle">[L_VERTICAL_ALIGNMENT_MIDDLE]</option>
+                                    <option value="bottom">[L_VERTICAL_ALIGNMENT_BOTTOM]</option>
+                                    <option value="baseline">[L_VERTICAL_ALIGNMENT_BASELINE]</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="table_width">[L_COLUMN_BACKGROUND_COLOR]</label>
+                            </td>
+                            <td>
+                                <button class="generalColorPickerButton" id="columnColorPicker_{containerId}"/>
+                            </td>
+                        </tr>
+                    </table>      
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

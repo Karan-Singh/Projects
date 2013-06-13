@@ -1,0 +1,52 @@
+BODY
+    {
+        font-size: 8pt;
+        color: #545b45;
+        font-family: Verdana, Arial, Helvetica, sans-serif;
+		background-color: #e3e1d7;
+		background-image: url(images/background_bg.gif);
+		background-position:top;
+		background-repeat:repeat-x; }
+			
+.srPageHeader { background-image: url(images/bodyFull_bg.gif); background-repeat:repeat-y; margin:0; padding:0;}	
+.srPageBody { background-color: #fff; }
+.srPageBodyMain { padding-right: 28px; padding-left: 10px; border-right: 1px solid #c1bda1; }
+.srLeftPane { vertical-align: top; width: 40px; border-left: 1px solid #c1bda1; }
+.srPageFooter { background-image: url(images/bodyFull_bg.gif); background-repeat:repeat-y; margin:0; padding:0;}
+.srPagetext { padding-left: 10px; padding-right: 10px; background-color:#FFFFFF; border-left: 1px solid #cccccc; border-right: 1px solid #cccccc;}
+.srErrorText { font-weight: bold; font-size: 8pt; color: #b02424; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none } 
+.srSpacer1 { font-size: 8pt; width: 100%; height: 20px; }
+.srNavLink { font-weight: normal; font-size: 8pt; color: #516c17; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: underline } 
+.srHeaderLink { font-weight: normal; font-size: 8pt; color: #516c17; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: underline }
+.srHeader1 { font-weight: bold; font-size: 23px; color: #545b45; line-height: 43pt; height:56px;  font-family: Arial, Verdana, sans-serif; letter-spacing: 1px; text-align: center; text-decoration: none; margin-bottom:15px; background-image: url(images/title_bg.gif); background-repeat:no-repeat;} 
+.srHeaderText1 { color: #666; }
+.srHeader2,h2 
+{
+     padding: 5px 5px 5px 5px; font-size: 11pt; font-weight: bold; color: #545b45; line-height:15pt; font-family: Arial, Verdana, sans-serif;
+     background-color:#eff0eb; height: 18px; background-repeat:no-repeat; text-align: left; text-decoration: none; 
+     border-top: 1px solid #cccccc; border-left: 1px solid #cccccc; border-bottom: 1px solid #999999;  border-right: 1px solid #999999;  }
+
+
+.srHeaderText2 { color: #666; }
+.srButtonPane { line-height: 20pt; text-align: center; font-family: Arial, Verdana, sans-serif;} 
+.srFormButton { border: #76854d 1px solid; margin: 5px; color: #eef1e6; padding: 1px 9px 1px 9px; background-color: #5f615b; text-decoration: none}
+.QuestionText       {width:710px;padding-left: 10px; font-size: 11pt; font-weight: bold; color: #545b45; line-height:20pt; font-family: Arial, Verdana, sans-serif; background-image: url(images/question_bg.gif); background-repeat:no-repeat; text-align: left; text-decoration: none }
+.QuestionTextReq {width:710px; padding-left: 5px; font-size: 11pt; font-weight: bold; color: #b02424; line-height:20pt; font-family: Arial, Verdana, sans-serif; background-image: url(images/question_bg.gif); background-repeat:no-repeat; text-align: left; text-decoration: none }
+.QNumber { font-weight: bold; font-size: 11pt; color: #545b45; } 
+.QuestionAnswer             {width:707px; background-image: url(images/question_bg2.gif); background-repeat: no-repeat; background-position:bottom; padding-left: 10px; padding-bottom:10pt; background-color: #; padding-right: 1px; }
+.QuestionAnswerExt       {width:707px; background-image: url(images/question_bg2.gif); background-repeat: no-repeat; background-position:bottom; padding-left: 10px; padding-bottom:10pt; background-color: #; padding-right: 1px;}
+.QuestionAnswer table       {width:98%;}
+.QuestionAnswerExt table       {}
+
+.QDividerNA { font-size: 1px; width: 100%; line-height: 1px; height: 1px; background-color: #6b623c } 
+.QMatrixHeader { font-weight: bold; font-size: 8pt; color: #666; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; text-decoration: none } 
+.QMatrixCell { font-size: 8pt; color: #666; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: center; text-decoration: none } 
+.QListRowLabel { font-weight: bold; font-size: 8pt; color: #666; font-family: Verdana, Arial, Helvetica, sans-serif; text-align: left; text-decoration: none } 
+.QListText { padding-left: 10px; font-size: 8pt; color: #666; font-family: Verdana, Arial, Helvetica, sans-serif; text-decoration: none } 
+.QTextBox { border: #666 1px solid; font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif } 
+.QDropDown { font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif } 
+.QListbox { border: #666 1px solid; font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif } 
+.QRadio { font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif } 
+.QListRow { background-color: #;} 
+.QListRowAlt { background-color: #d9dbd2; } 
+.footer { color: #666666 } .footer a { color: #545b45 }

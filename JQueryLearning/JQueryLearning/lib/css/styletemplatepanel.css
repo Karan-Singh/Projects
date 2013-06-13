@@ -1,0 +1,53 @@
+/*********************************
+ * Style Template Panel CSS      *
+ ********************************/
+
+/* Parent container needs overall padding */
+.ui-layout-content {
+    padding: 5px;
+}
+
+/* Header container of the side bar */
+.sidebar_header {
+    padding: 5px;
+    margin-bottom: 0px;
+    border-top: 0;
+    border-right: 0;
+}
+
+/* Inner header container */
+.headerContent {
+    font-size: 1.2em;
+}
+
+/* The container for a style group including header and entries */
+.styleGroupOuterContainer {
+    margin-bottom: 3px;
+}
+
+/* Container for the group name */
+.styleGroup {
+    padding: 5px !important;
+}
+
+/* Container for a single style template entry */
+.styleTemplateContainer {
+    padding:5px;
+    margin: 1px 3px 1px 3px;
+    cursor: default !important;
+}
+
+/* Style for selected style template entries */
+.styleTemplateSelected {
+    outline: 1px solid;
+}
+
+/* Style for visible style template entries */
+.styleTemplateVisible {
+    display: block;
+}
+
+/* Style for hidden style template entries */
+.styleTemplateHidden {
+    display: none;
+}

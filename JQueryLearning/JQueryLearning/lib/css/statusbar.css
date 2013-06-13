@@ -1,0 +1,157 @@
+/*********************************
+ * Status Bar CSS                *
+ ********************************/
+
+/* Container for all widgets in the status bar */
+.statusBar td {
+    padding: 0 !important;
+    line-height: 1.0em !important;
+    vertical-align: inherit !important;
+}
+
+.statusBar > table {
+    width: 100% !important;
+}
+
+.transparent-border {
+	border: 1px solid transparent;
+}
+
+/* The style template panel button */
+body div.statusBar .styleTemplateButton {
+    padding-left: 0px !important;
+	padding-right: 2px !important;
+}
+.documentCounterDisplay {
+    white-space: nowrap;
+    font-weight: bold !important;
+}
+
+/* The container of the zoom-slider */
+.zoomSliderContainer {
+    width: 110px;
+    margin-left: 5px;
+    margin-right: 5px;
+    font-size: 8pt;
+}
+
+.zoomValueInput input {
+    
+}
+
+.zoomValueSelector {
+	margin-left: 2px;
+}
+
+.zoomValueInput input {
+	width: 20px;
+	min-width: 20px;
+	padding: 3px;
+	padding-right: 12px;
+	text-align: right;
+}
+.percentageSign {
+	margin-left: -14px;
+	width: 12px !important;
+	min-width: 10px !important;
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+	background-color: transparent;
+	text-align: left;
+	border: 0;
+}
+/* The container of the resizer widget */
+.resizerContainer {
+    width: 14px;
+    height: 14px;
+}
+
+/* The container of the document palette */
+.documentPaletteContainer {
+    margin: 4px;
+    text-align: left;
+    overflow: hidden;
+}
+
+/* The table container of the document palette */
+body .documentPaletteList {
+    padding: 0;
+    margin: 0;
+}
+
+/* A single element of the document palette */
+body .documentPaletteList td {
+    min-height: 22px !important;
+}
+
+/* The spacer container td elements */
+body .documentPaletteListSpacer {
+    vertical-align: middle;
+    padding: 0;
+}
+
+/* The element container td elements */
+body .documentPaletteListElement {
+    vertical-align: middle;
+    padding: 0;
+}
+
+/* Styles for elements and spacers */
+body .documentPaletteElement {
+    float: left;
+    height: 12px;
+}
+
+/* A palette element (span) */
+body .documentPaletteElement {
+    padding: 4px;
+    text-decoration: none;
+    margin: 0;
+}
+
+body .documentPaletteElement span {
+    font-weight: bold !important;
+    line-height: 1.0em;;
+}
+
+body .documentPaletteElement:hover {
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+/* A palette element (span) HOVER */
+body span.documentPaletteElement:hover {
+    cursor: default !important;
+}
+
+body .zoomSelectorContainer {
+	margin: 0;
+    padding: 2px;
+    width: 120px;
+    max-height: 120px;
+    overflow: auto;
+    position: absolute;
+    margin-top: 22px;
+    margin-left: 8px;
+    list-style: none;
+    font-size: 0.7em;
+    display: none;
+}
+
+.documentPaletteNavLeft {
+    visibility: hidden;
+    margin: 4px;
+    margin-right: 0px;
+    min-height: 22px;
+}
+
+.documentPaletteNavRight {
+    visibility: hidden;
+    margin: 4px;
+    margin-left: 0px;
+    min-height: 22px;    
+}
+
+.documentPaletteNavLeft span, .documentPaletteNavRight span {
+    
+}

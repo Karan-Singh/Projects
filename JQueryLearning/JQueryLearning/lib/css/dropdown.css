@@ -1,0 +1,105 @@
+/* Styles for jQuery menu widget
+Author:	Maggie Wachs, maggie@filamentgroup.com
+Date:		September 2008
+*/
+
+
+/* REQUIRED STYLES - the menus will only render correctly with these rules */	
+
+.fg-menu-container { 
+    position: absolute; 
+    top:0;
+    left:-999px;
+    padding: .4em;
+    overflow: hidden;
+    z-index: 1099;
+    font-family: Arial,sans-serif !important;
+    font-size: 8.5pt !important;
+}
+.fg-menu-container.fg-menu-flyout { overflow: visible; }
+
+.fg-menu, .fg-menu ul { list-style-type:none; padding: 0; margin:0; }
+
+.fg-menu { position:relative; }
+
+.fg-menu ul { position:absolute; top:0; }
+.fg-menu ul ul { top:-1px; }
+
+.fg-menu.fg-menu-scroll,
+.fg-menu ul.fg-menu-scroll { overflow: scroll;  overflow-x: hidden; }
+
+.fg-menu li { clear:both; float:left; width:100%; margin: 0; padding:0; border: 0; font-size: 1em; background: none; line-height: 1em !important}	
+.fg-menu li li { font-size:1em; } /* inner li font size must be reset so that they don't blow up */
+
+.fg-menu-scroll { overflow: scroll; overflow-x: hidden; }
+
+/* REQUIRED LINK STYLES: links are "display:block" by default; if the menu options are split into 
+	selectable node links and 'next' links, the script floats the node links left and floats the 'next' links to the right	*/
+
+.fg-menu a:link,
+.fg-menu a:visited,
+.fg-menu a:hover,
+.fg-menu a:active { float:left; width:92%; padding:.3em 3%; text-decoration:none; outline: 0 !important; }
+
+.fg-menu a { border: 1px dashed transparent; }
+
+.fg-menu a.ui-state-default:link,
+.fg-menu a.ui-state-default:visited,
+.fg-menu a.ui-state-default:hover,
+.fg-menu a.ui-state-default:active,
+.fg-menu a.ui-state-hover:link,
+.fg-menu a.ui-state-hover:visited,
+.fg-menu a.ui-state-hover:hover,
+.fg-menu a.ui-state-hover:active,
+ .fg-menu a.ui-state-active:link,
+ .fg-menu a.ui-state-active:visited,
+ .fg-menu a.ui-state-active:hover,
+.fg-menu a.ui-state-active:active { border-style: solid; font-weight: normal; }
+
+.fg-menu a span { display:block; cursor:pointer; }
+
+
+ /* SUGGESTED STYLES - for use with jQuery UI Themeroller CSS */	
+ 
+.fg-menu-indicator span { float:left; }
+.fg-menu-indicator span.ui-icon { float:right; }
+
+.fg-menu-content.ui-widget-content, 
+.fg-menu-content ul.ui-widget-content { border:0; }
+
+
+/* ICONS AND DIVIDERS */
+
+.fg-menu.fg-menu-has-icons a:link,
+.fg-menu.fg-menu-has-icons a:visited,
+.fg-menu.fg-menu-has-icons a:hover,
+.fg-menu.fg-menu-has-icons a:active { padding-left:20px; }
+
+.fg-menu .horizontal-divider hr, .fg-menu .horizontal-divider span { padding:0; margin:5px .6em; }
+.fg-menu .horizontal-divider hr { border:0; height:1px; }
+.fg-menu .horizontal-divider span { font-size:.9em; text-transform: uppercase; padding-left:.2em; }
+
+
+.fg-button { 
+    height:20px;
+    position:relative;
+    text-align:center;
+    text-decoration:none !important;
+    width:20px;
+    float: left;
+    border: 1px solid #AAAAAA !important;
+}
+.fg-button .ui-icon { position: absolute; top: 50%; margin-top: -8px; left: 50%; margin-left: -8px; }
+a.fg-button { float:left;  }
+button.fg-button { width:auto; overflow:visible; } /* removes extra button width in IE */ 
+
+.fg-menu-combo {
+    padding: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    border-right: 0;
+    line-height: 14px !important;
+    margin: 0;
+}
+
+.hidden { position:absolute; top:0; left:-9999px; width:1px; height:1px; overflow:hidden; }

@@ -1,0 +1,64 @@
+<ul>
+    <li>
+        <a href="#insertImage_{containerId}">[L_IMAGE_PROPERTIES_TAB]</a>    
+    </li>
+</ul>
+<div id="insertImage_{containerId}" class="dialogPanelContainer">
+    <table class="dialogPanels">
+        <tr>
+            <td class="ribbonPanel ui-widget-content">
+                <div class="dialogPanelInnerContainer">
+                    <table border="0" cellspacing="0">
+                        <tr>
+                            <td colspan="4"><p>[L_IMAGE_PROPERTIES_DESCRIPTION]</p></td>
+                        <tr>
+                            <td>
+                                <label for="table_rows">[L_INSERT_IMAGE_URL]</label>
+                            </td>
+                            <td>
+                                <input type="text" size="30" id="image_url_field_{containerId}" name="rows" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button id="image_open_file_button_{containerId}" title="{L_OPEN_FILECHOOSER}">[L_OPEN_FILECHOOSER]</button>
+                                <button id="image_open_webdav_button_{containerId}"	title="{L_WEBDAV_OPEN}">[L_WEBDAV_OPEN]</button>
+                            </td>
+                        </tr>
+                    </table>      
+                </div>
+            </td>
+            <td class="ribbonPanel ui-widget-content">
+                <div class="dialogPanelInnerContainer">
+                    <table border="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <label for="table_rows">[L_INSERT_IMAGE_ALTTEXT]</label>
+                            </td>
+                            <td>
+                                <input type="text" size="18" id="image_alt_field_{containerId}" name="rows" />
+                            </td>
+                         </tr>
+                         <tr>
+                            <td>
+                                <label for="table_rows">[L_INSERT_IMAGE_BORDERWIDTH]</label>
+                            </td>
+                            <td>
+                                <input type="text" size="6" id="image_border_width_{containerId}" name="rows" />
+                            </td>
+                         </tr>
+                         <tr>
+                            <td>
+                                <label for="table_rows">[L_INSERT_IMAGE_SIZE]</label>
+                            </td>
+                            <td>
+                                <input type="text" size="6" id="image_size_width_field_{containerId}" name="rows" />
+                                x<input type="text" size="6" id="image_size_height_field_{containerId}" name="rows" />
+                            </td>
+                        </tr>
+                    </table>      
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,41 @@
+<div id="insertBookmarkSource_{containerId}" class="dialogPanelContainer">
+    <table class="dialogPanels">
+        <tr>           
+            <td class="ribbonPanel ui-widget-content align-top">
+                <div class="dialogPanelInnerContainer">
+                    <table border="0" cellspacing="0">
+                        <tr>
+                            <td colspan="2"><p>[L_BOOKMARK_NAME]</p></td>
+                        </tr>
+                        <tr style="color: red;">
+                            <td style="font-size: 0.9em;" colspan="2">
+                                <span id="bookmark_invalid_id_{containerId}" style="display: none;">[L_DUPLICATE_OR_INVALID_BOOKMARK]</span>&nbsp;
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text" size="46" id="bookmark_text_field_{containerId}" name="rows" />
+                            </td>
+                            <td>
+                                <button id="add_bookmark_button_{containerId}" title="{L_ADD_BUTTON}">[L_ADD_BUTTON]</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="dialogPanelInnerContainer">
+                    <table border="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <ol class="selectableList" id="bookmark_blockelements_{containerId}">
+                                </ol>
+                            </td>
+                            <td valign="top">
+                                <button id="go_to_bookmark_button_{containerId}" title="{L_GO_TO_BUTTON}">[L_GO_TO_BUTTON]</button>
+                            </td>
+                        </tr>
+                    </table> 
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

@@ -1,0 +1,93 @@
+<ul>
+    <li>
+        <a href="#pagePropertiesGeneral_{containerId}">[L_PAGE_PROPERTIES_GENERAL_TAB]</a>    
+    </li>
+    <li>
+        <a href="#pagePropertiesColors_{containerId}">[L_PAGE_PROPERTIES_COLORS_TAB]</a>    
+    </li>
+    <li>
+        <a href="#pagePropertiesBackground_{containerId}">[L_PAGE_PROPERTIES_BACKGROUND_TAB]</a>    
+    </li>
+</ul>
+<div id="pagePropertiesGeneral_{containerId}" class="dialogPanelContainer">
+    <table class="dialogPanels">
+        <tr>           
+            <td class="ribbonPanel ui-widget-content">
+                <div class="dialogPanelInnerContainer">
+                    <table border="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <label for="table_rows">[L_PAGE_PROPERTIES_TITLE]</label>
+                            </td>
+                            <td>
+                                <input type="text" size="23" id="pageproperties_title_field_{containerId}" name="rows" />
+                            </td>
+                        </tr>
+                         <tr>
+                            <td>
+                                <label for="table_rows">[L_PAGE_PROPERTIES_BASE]</label>
+                            </td>
+                            <td>
+                                <input type="text" size="23" id="pageproperties_base_field_{containerId}" name="rows" />
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="pagePropertiesColors_{containerId}" class="dialogPanelContainer">
+    <table class="dialogPanels">
+        <tr>
+            <td class="ribbonPanel ui-widget-content">
+                <div class="dialogPanelInnerContainer">
+                    <table border="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <label for="table_width">[L_PAGE_PROPERTIES_TEXT_COLOR]</label>
+                            </td>
+                            <td>
+                                <button class="generalColorPickerButton" id="pageproperties_text_color_{containerId}"/>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="table_width">[L_PAGE_PROPERTIES_BACKGROUND_COLOR]</label>
+                            </td>
+                            <td>
+                                <button class="generalColorPickerButton" id="pageproperties_background_color_{containerId}"/>
+                            </td>
+                        </tr>
+                    </table>      
+                </div>
+            </td>
+         </tr>
+    </table>
+</div>
+<div id="pagePropertiesBackground_{containerId}" class="dialogPanelContainer">
+    <table class="dialogPanels">
+        <tr>
+            <td class="ribbonPanel ui-widget-content">
+                <div class="dialogPanelInnerContainer">
+                    <table border="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <label for="table_rows">[L_PAGE_PROPERTIES_BACKGROUND_IMAGE]</label>
+                            </td>
+                            <td>
+                                <input type="text" size="30" id="background_image_field_{containerId}" name="rows" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <button id="background_image_open_file_button_{containerId}" title="{L_OPEN_FILECHOOSER}">[L_OPEN_FILECHOOSER]</button>
+                                <button id="background_image_open_webdav_button_{containerId}"  title="{L_WEBDAV_OPEN}">[L_WEBDAV_OPEN]</button>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

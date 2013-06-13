@@ -1,0 +1,45 @@
+@namespace ro "http://www.realobjects.com/review";
+/**
+ * This is the reference cross reference style sheet.
+ * You can modify the look of the references types 
+ * available in the "Insert Cross-Reference..." dialog
+ * by modifying the appropriate selectors below and
+ * loading this style sheet via the API method
+ * loadCrossReferencesStyleSheet.
+ */
+
+
+/**
+ * Reference Type Element Number
+ */
+ro|crossref[href].crElementNumber:before,
+a[href].crElementNumber:before {
+    content: target-text(attr(href),before);
+    -ro-xref-target: attr(href);
+}
+
+/**
+ * Reference Type Element Text
+ */
+ro|crossref[href].crElementText:before,
+a[href].crElementText:before {
+    content: target-text(attr(href),content);
+    -ro-xref-target: attr(href);
+}
+
+/**
+ * Reference Type Page Number
+ */
+ro|crossref[href].crPageNumber:before,
+a[href].crPageNumber:before {
+    content: target-counter(attr(href),page);
+    -ro-xref-target: attr(href);
+}
+
+
+/**
+ * Page Counter used by cross-references 
+ */
+@page {
+    counter-increment: page 1;
+}

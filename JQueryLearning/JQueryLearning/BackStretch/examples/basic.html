@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<style>
+	    body { font-family: Helvetica, Arial, sans-serif; }
+	    .container {
+	        width: 90%;
+	        margin: 20px auto;
+	        background-color: #FFF;
+	        padding: 20px;
+	    }
+	    pre { border: 1px solid #CCC; background-color: #EEE; color: #333; padding: 10px; }
+	</style>
+</head>
+<body>
+    <!--<div class="container">        
+<!--        <pre><code>
+&lt;script src=&quot;../lib/jquery-1.6.4.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;../jquery.backstretch.min.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    $.backstretch(&quot;pot-holder.jpg&quot;);
+&lt;/script&gt;
+        </code></pre>
+    </div>-->
+	<script src="../../jquery-1.7.1.min.js"></script>
+	<script src="../jquery.backstretch.min.js"></script>
+	<script>
+	    //$.backstretch("pot-holder.jpg");
+	    //$.backstretch("pot-holder.jpg", {speed:1100});
+
+	    var images = ["coffee.JPG", "pot-holder.JPG"];
+
+	    $(images).each(function () {
+	        $("<img>")[0].src = this;
+	    });
+
+	    var index = 0;
+
+	    $.backstretch(images[index], { speed: 500 });
+
+	    setInterval(function () {
+	        index = (index >= images.length - 1) ? 0 : index + 1;
+	        $.backstretch(images[index]);
+	    }, 5000);               
+                   
+    </script>
+</body>
+</html>

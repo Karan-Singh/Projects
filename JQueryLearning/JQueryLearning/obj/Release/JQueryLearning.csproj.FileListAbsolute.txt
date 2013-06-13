@@ -1,0 +1,10 @@
+E:\Karan\Projects\JQueryLearning\JQueryLearning\bin\CodeContracts\JQueryLearning.Contracts.dll
+E:\Karan\Projects\JQueryLearning\JQueryLearning\bin\CodeContracts\JQueryLearning.Contracts.pdb
+E:\Karan\Projects\JQueryLearning\JQueryLearning\bin\JQueryLearning.dll
+E:\Karan\Projects\JQueryLearning\JQueryLearning\bin\JQueryLearning.pdb
+E:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Release\Decl\JQueryLearning.dll
+E:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Release\Decl\JQueryLearning.pdb
+E:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Release\JQueryLearningccrefgen.rsp
+E:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Release\JQueryLearning.rewritten
+E:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Release\JQueryLearning.dll
+E:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Release\JQueryLearning.pdb

@@ -1,0 +1,125 @@
+/*********************************
+ * jQuery override CSS           *
+ ********************************/
+
+/* Overwrite font settings */
+body div.eongmainstyles * {
+    font-family: Arial,sans-serif;
+    font-size: 8.5pt;
+    font-weight: normal;
+    line-height: 0.7em;
+}
+
+body div.eongmainstyles table {
+    border-collapse: separate !important;
+    width: auto;
+	margin: 0;
+}
+
+body div.modalDialog table{
+    border-collapse: separate !important;
+    width: 100%;
+	margin: 0;
+}
+
+body div.eongdropdownstyles * {
+    font-family: Arial,sans-serif;
+    font-size: 8.5pt !important;
+    font-weight: normal;
+}
+
+body .ui-widget-header, body .ui-widget-header span {
+    font-weight: bold !important;
+}
+
+body .ui-tabs .ui-tabs-panel {
+    padding: 0.2em 0.2em !important;
+}
+
+.ui-resizable-helper {
+    border: 1px dotted gray;
+}
+
+.ui-helper-reset {
+    line-height: 0.7 !important;
+}
+.ui-widget {
+    font-size: 0.7em !important;
+}
+
+.ui-dialog-titlebar *, .ui-dialog-buttonpane * {
+    font-size: 8.5pt !important;
+}
+
+.ui-dialog-content {
+    font-size: 1.0em !important;
+}
+
+.noPadding {
+    padding: 0 !important; 
+}
+
+.colorSelector {
+    margin: auto;
+}
+
+/* Overwrite Tab padding */
+.ui-tabs .ui-tabs-nav li a {
+    padding: 0.5em 0.8em !important;
+}
+
+/* Default cursor for elements in toolbar and all button elements */
+.ui-tabs a, .ui-tabs button, button {
+    cursor: default !important;
+}
+
+.ui-tabs li {
+    white-space: nowrap !important;
+}
+
+.ui-resizable-helper {
+    border: 1px dotted gray;
+} 
+
+.ui-resizable-handle-se {
+    cursor: se-resize;
+    z-index: 899;
+    width: 14px;
+    height: 14px;
+}
+
+.modalDialog .ui-spinner span.ui-icon {
+   text-indent: 0;
+   font-size: 0.7em;
+   margin: auto; 
+}
+
+.ui-icon-triangle-1-n {
+    background-position: 1px -16px !important;
+}
+body .ui-tabs .ui-tabs-hide { position: absolute !important; left:-10000px !important; display: block !important;}
+
+/*Tooltip and Pointer CSS*/
+
+.tooltip { 
+    display:none;
+}
+
+.tooltipHead {
+    border-bottom:1px solid #AAAAAA;
+    font-weight:bold;
+    padding:5px;
+}
+
+.tooltipImage {
+    padding-right:5px;
+    max-width: 200px;
+}
+
+.tooltipDescription {
+    padding-right:5px;
+}
+
+
+.ui-tooltip {position:absolute; max-width: 300px; z-index:9999; }
+body .ui-tooltip { border-width:2px; }

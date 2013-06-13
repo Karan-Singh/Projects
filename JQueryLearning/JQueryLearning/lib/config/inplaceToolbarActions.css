@@ -1,0 +1,7 @@
+html {
+    -ro-inplacetoolbaraction-add: font-family, font-size, cut, copy, paste, increase-font-size, decrease-font-size, bold, italic, underline, align-left, align-center, align-right, align-justify, decrease-indent, increase-indent, list-ordered, list-unordered;
+}
+
+table {
+    -ro-inplacetoolbaraction-add: delete-table, delete-column, delete-row, insert-column-before, insert-column-after, insert-row-before, insert-row-after;
+}

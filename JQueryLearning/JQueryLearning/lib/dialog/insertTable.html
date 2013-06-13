@@ -1,0 +1,148 @@
+<ul>
+    <li>
+        <a href="#insertTableDialog_{containerId}">[L_TABLEDIALOG_INSERT_TAB]</a>    
+    </li>
+    <li>
+        <a href="#tableProperties_{containerId}">[L_TABLEDIALOG_PROPERTIES_TAB]</a>    
+    </li>
+    <li>
+        <a href="#borderProperties_{containerId}">[L_TABLEDIALOG_BORDER_PROPERTIES_TAB]</a>    
+    </li>
+</ul>
+<div id="insertTableDialog_{containerId}" class="dialogPanelContainer">
+    <table class="dialogPanels">
+        <tr>           
+            <td class="ribbonPanel ui-widget-content">
+                <div class="dialogPanelInnerContainer">
+                    <table border="0" cellspacing="0" class="drawTableElementContainer">
+                        <tr>
+                            <td>
+                                <table id="tableDialog_table_{containerId}" class="tableDialog_table" cellspacing="0" cellpadding="0" border="0">
+                                    
+                                    
+                                </table>
+                            </td>
+                        </tr>
+                    </table>      
+                </div>
+            </td>
+            <td class="ribbonPanel ui-widget-content">
+                <div class="dialogPanelInnerContainer">
+                    <table border="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <label for="table_rows">[L_TABLEDIALOG_ROWS]</label>
+                            </td>
+                            <td>
+                                <input type="text" size="5" id="table_rows_{containerId}" name="rows" value="2" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="table_columns">[L_TABLEDIALOG_COLUMNS]</label>
+                            </td>
+                            <td>
+                                <input type="text" size="5" id="table_columns_{containerId}" name="cols" value="2" />
+                            </td>
+                        </tr>
+                    </table>     
+                </div>
+            </td>
+            <td class="ribbonPanel ui-widget-content">
+                <div class="dialogPanelInnerContainer">
+                    <table border="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <label for="table_width">[L_TABLEDIALOG_CELLPADDING]</label>
+                            </td>
+                            <td>
+                                <input type="text" size="4" id="table_cell_padding_{containerId}" name="table_width" value="1" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="table_width">[L_TABLEDIALOG_CELLSPACING]</label>
+                            </td>
+                            <td>
+                                <input type="text" size="4" id="table_cell_spacing_{containerId}" name="table_width" value="2" />
+                            </td>
+                        </tr>
+                    </table>      
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="tableProperties_{containerId}" class="dialogPanelContainer">
+    <table class="dialogPanels">
+        <tr>
+            <td class="ribbonPanel ui-widget-content">
+                <div class="dialogPanelInnerContainer">
+                    <table border="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <label for="table_width">[L_TABLEDIALOG_WIDTH]</label>
+                            </td>
+                            <td>
+                                <input type="text" size="5" id="table_width_{containerId}" name="table_width" value="100" />
+                                <select id="table_width_unit_{containerId}">
+                                    <option value="percent" selected=selected>[L_WIDTH_BY_PERCENT]</option>
+                                    <option value="px">[L_WIDTH_BY_PX]</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="table_width">[L_TABLEDIALOG_ALIGNMENT]</label>
+                            </td>
+                            <td>
+                                <select id="table_alignment_{containerId}">
+                                    <option value="default" selected="selected">[L_ALIGNMENT_DEFAULT]</option>
+                                    <option value="left">[L_ALIGNMENT_LEFT]</option>
+                                    <option value="center">[L_ALIGNMENT_CENTER]</option>
+                                    <option value="right">[L_ALIGNMENT_RIGHT]</option>                                                                
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="table_width">[L_TABLE_BACKGROUND_COLOR]</label>
+                            </td>
+                            <td>
+                                <button class="generalColorPickerButton" id="tableColorPicker_{containerId}"/>
+                            </td>
+                        </tr>
+                    </table>      
+                </div>
+            </td>
+         </tr>
+    </table>
+</div>
+<div id="borderProperties_{containerId}" class="dialogPanelContainer">
+    <table class="dialogPanels">
+        <tr>
+            <td class="ribbonPanel ui-widget-content">
+                <div class="dialogPanelInnerContainer">
+                    <table border="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <label for="table_width">[L_TABLEDIALOG_BORDER_WIDTH]</label>
+                            </td>
+                            <td>
+                                <input type="text" size="5" id="table_border_width_{containerId}" name="border_width" value="1" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="table_width">[L_TABLEDIALOG_BORDER_COLOR]</label>
+                            </td>
+                            <td>
+                                <button class="generalColorPickerButton" id="tableBorderColorPicker_{containerId}"/>
+                            </td>
+                        </tr>
+                    </table>      
+                </div>
+            </td>
+         </tr>
+    </table>
+</div>

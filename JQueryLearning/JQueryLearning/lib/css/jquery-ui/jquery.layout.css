@@ -1,0 +1,33 @@
+/*********************************
+ * jQuery Layout CSS             *
+ ********************************/
+.ui-layout-pane { /* all 'panes' */ 
+    background: transparent; 
+    padding: 0px;
+    overflow: auto;
+    font-family: Arial,sans-serif; font-size: 0.7em;
+} 
+
+.ui-layout-pane-west { 
+    padding: 0px; 
+    overflow: auto;
+    background:#EBEAEA url(images/ui-bg_highlight-hard_75_ebeaea_1x100.png) repeat-x scroll 50% top;
+    border:1px solid #AAAAAA;
+    color:#222222;
+}
+
+.ui-layout-toggler {
+    background: none !important;
+}
+
+.ui-layout-resizer {
+    cursor: w-resize !important;
+}
+
+.ui-layout-resizer-west-open:hover {
+    background:transparent url(images/resizable-w.gif) repeat-y scroll center center;
+}
+
+.ui-layout-center {
+    overflow: hidden !important;
+}

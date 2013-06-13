@@ -1,0 +1,343 @@
+/********************************
+ * ######## Dialog CSS ##########
+ ********************************/
+
+/********************************
+ * General CSS 
+ ********************************/
+
+/* Used in document statistics dialog to align values */
+.spanRight {
+    text-align: right;
+}
+
+/* Used to vertical align all color tables */
+body td.align-top {
+    vertical-align: top !important;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+
+/**/
+fieldset{
+    height: 100%;
+}
+
+/* Cross References dialog */
+
+table.crossreferences-ui-panel{
+    height: 275px;
+    width: 500px;
+}
+
+td.crossreferences-ui-northeast{
+    height: 70px;
+}
+
+td.crossreferences-ui-northwest{
+    height: 250px;
+}
+td.crossreferences-ui-northwest .selectableList{
+    height: 240px;
+    width: 140px;
+}
+td.crossreferences-ui-southeast{
+    height: 160px;
+}
+td.crossreferences-ui-southeast .selectableList{
+    height: 150px;
+}
+
+.selectableList {
+    list-style-type: none; 
+    margin: 0; 
+    padding: 0;
+    width: 300px;
+    height: 160px;
+    overflow: scroll;
+    background-color: #FFFFFF;
+    border: 1px solid gray;
+    cursor: default !important;
+}
+
+.selectableList .ui-selectee {
+    background: #FFFFFF;
+}
+.selectableList .ui-selected {
+    background: #0000FF; color: white;
+}
+
+.selectableList li {
+    margin: 0;
+    padding: 0.2em;
+    font-size: 1em;
+    height: 12px;
+}
+
+/* Fullscreen icon */
+.close-dialog {
+    margin-top: -3px !important;
+    margin-right: -5px !important;
+}
+
+.dialogPanelInnerContainer {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/* The input field labels */ 
+.dialogPanelInnerContainer label {
+    font-weight: bold;
+    padding-right: 5px;
+    white-space: nowrap;
+}
+
+/* The header description in all color dialogs (Default/Custom/... Color */ 
+.dialogPanelInnerContainer th {
+    white-space: nowrap;
+    border-bottom: 1px solid #AAAAAA;
+    padding: 3px;
+}
+
+/* Container of a single dialog tab */
+.dialogPanelContainer {
+    float: left;
+    padding: 5px;
+    padding-bottom: 0 !important;
+}
+
+.dialogPanelInnerContainer input, .dialogPanelInnerContainer select {
+    vertical-align: middle;
+}
+
+.dialogPanelInnerContainer td, .dialogPanelInnerContainer th {
+    white-space: nowrap;
+}
+
+.dialogInnerTabs {
+    font-size: 1em !important;
+    border: 0 !important;
+    background: inherit !important;
+    padding: 0 !important;
+}
+
+.dialogInnerTabs .ui-widget-header {
+    background: inherit !important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.dialogInnerTabs .ui-corner-all {
+    border: 0 !important;
+}
+
+.dialogInnerTabs .ui-tabs-panel {
+    padding: 0 !important;
+    border-width: 1px !important;
+}
+
+/********************************
+ * Modal Dialog CSS 
+ ********************************/
+.modalDialog {
+    font-size: 8pt !important;
+    padding: 0px !important;
+    padding-top: 3px !important;
+}
+
+.modalDialog .ribbonPanel {
+    margin: 0;
+    margin-top: 4px;
+}
+
+.modalDialog .dialogPanelContainer {
+    padding: 0;
+}
+
+.modalDialog select, .modalDialog textarea, .modalDialog input, .modalDialog td, .modalDialog p, .modalDialog div {
+    font-family: Arial,sans-serif;
+    font-size: 8.5pt;
+    font-weight: normal;
+    line-height: 1.1em;
+}
+
+.modalDialog td {
+    vertical-align: inherit !important;
+    padding: 1px !important;
+}
+
+/* The overlay displayed when a dialog is opened */
+.dialogOverlay {
+    position: absolute;
+    background-color: #000000;
+    opacity: 0.1;
+    filter:Alpha(Opacity='10');
+    top: 0;
+    z-index: 1000;
+}
+
+/********************************
+ * Insert Table Widget CSS 
+ ********************************/
+body div.modalDialog table.tableDialog_table {
+    border-collapse: collapse !important;
+    min-width: 73px;
+}
+
+/* The CSS porperties of all table wizard cells*/
+.tableDialog_table td {
+    background-color:#FFFFFF;
+    border:1px solid black;
+    min-height:9px;
+    min-width:9px;
+    height:9px;
+    width:9px;
+    overflow: hidden;
+    font-size: 8px;
+    padding: 0 !important;
+}
+
+/* The color of the table wizard selection grid */
+td.hover {
+    background-color:#0000FF;
+}
+
+/* The parent container of the the table wizard */
+.drawTableElementContainer {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+/********************************
+ * Color Picker Widget CSS 
+ ********************************/
+
+/* A color cell */
+.colorPickerTable td {
+    font-size: 10px;
+    padding: 1px;
+    width: 16px;
+    height: 16px;
+}
+
+/* The clickable button of a color cell */
+.colorPickerTable td button {
+    font-size: 10px;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    border: 2px solid grey;
+}
+
+/* This class can be used for any button to use it as color picker button*/
+.generalColorPickerButton {
+    font-size: 10px;
+    padding: 0;
+    width: 16px;
+    height: 16px;
+    border: 2px solid grey;
+}
+
+/********************************
+ * Special Character Widget CSS 
+ ********************************/
+
+/* The font family select field */
+.fontFamilySelector {
+    height: 18px;
+    font-size: 8pt;
+    line-height: 8pt;
+    max-width: 150px;
+}
+
+/* The parent container for one special character */
+.specialCharDiv {
+    padding: 0px;
+    cursor: default;
+    font-size: 8pt !important;
+    float: left;
+}
+
+/* The container for one special character */
+.specialCharDiv td {
+    padding: 0px;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* The parent container to display a selected character in a specific font family */
+.viewCharField {
+    margin: 0;
+	margin-right: 5px;
+    width: 32px !important;
+}
+
+/* The container to display a selected character in a specific font family */
+.viewCharField td {
+    font-size: 1.3em !important;
+    margin: 0;
+    background-color: #FFFFFF;
+    text-align: center;
+    vertical-align: middle;
+    width: 32px !important;
+    height: 32px !important;
+    border: 2px solid #AAAAAA;
+    padding: 0px;
+    cursor: default;
+}
+
+/********************************
+ * Object Parameter Widget CSS
+ ********************************/
+
+/* The parent container for this widget, needs a minimum size to avoid scrollbars */
+.parameterWidgetContainer {
+    min-width: 238px;
+    min-height: 180px;
+    height: 180px;
+    overflow-y: auto;
+}
+
+/* The header cells (Name, Value) */
+.parameterWidgetHeader td {
+    text-align: center;
+    padding: 3px;
+}
+
+/* The inner container containing the list of parameters */
+.parameterWidgetInnerContainer {
+    overflow-x: visible;
+    overflow-y: auto;
+}
+
+/* A parameter cell container*/
+.parameterWidgetInnerContainer td {
+    text-align: center;
+    background-color: #FFFFFF;
+    border: 1px solid #AAAAAA !important;
+    padding: 0px;
+}
+
+/* A parameter input field */
+.parameterWidgetInnerContainer td input{
+    border: 0;
+    background-color: #FFFFFF;
+    padding: 1px;
+}
+
+/* The container for the Add/Remove buttons */
+.parameterWidgetButtonContainer {
+    text-align: right;
+    padding-top: 5px;
+}
+
+/* The selected row of the attribute list */
+.selectedRow input {
+    outline: 1px solid blue !important;
+    border-collapse: collapse;
+}

@@ -1,0 +1,155 @@
+<ul>
+    <li>
+        <a href="#insertObjectSource_{containerId}">[L_OBJECT_SOURCE_TAB]</a>    
+    </li>
+    <li>
+        <a href="#objectProperties_{containerId}">[L_OBJECT_PROPERTIES_TAB]</a>    
+    </li>
+    <li>
+        <a href="#objectParameters_{containerId}">[L_OBJECT_PARAMETER_TAB]</a>    
+    </li>
+</ul>
+<div id="insertObjectSource_{containerId}" class="dialogPanelContainer">
+    <table class="dialogPanels">
+        <tr>           
+            <td class="ribbonPanel ui-widget-content">
+                <div class="dialogPanelInnerContainer">
+                    <table border="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <label for="table_rows">[L_OBJECT_SOURCE]</label>
+                            </td>
+                            <td>
+                                <input type="text" size="40" id="object_url_field_{containerId}" name="rows" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td>
+                                <button id="object_open_file_button_{containerId}" title="{L_OPEN_FILECHOOSER}">[L_OPEN_FILECHOOSER]</button>
+                                <button id="object_open_webdav_button_{containerId}" title="{L_WEBDAV_OPEN}">[L_WEBDAV_OPEN]</button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="table_rows">[L_OBJECT_TYPE]</label>
+                            </td>
+                            <td>
+                                <select id="object_type_{containerId}">
+                                    <option value="application/x-shockwave-flash" selected="selected">[L_OBJECT_FLASH]</option>
+                                    <option value="video/quicktime">[L_OBJECT_QUICKTIME]</option>
+                                    <option value="application/x-mplayer2">[L_OBJECT_WMP]</option>
+                                    <option value="audio/wav">[L_OBJECT_WAV]</option>
+                                    <option value="audio/mpeg3">[L_OBJECT_MP3]</option>
+                                    <option value="video/avi">[L_OBJECT_AVI]</option>
+                                    <option value="application/vnd.rn-realmedia">[L_OBJECT_RM]</option>                                                                
+                                </select>
+                            </td>
+                        </tr>
+                    </table> 
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+<div id="objectProperties_{containerId}" class="dialogPanelContainer">
+    <table class="dialogPanels">
+        <tr>
+            <td class="ribbonPanel ui-widget-content">
+                <div class="dialogPanelInnerContainer">
+                    <table border="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <label for="table_rows">[L_OBJECT_NAME]</label>
+                            </td>
+                            <td colspan="3">
+                                <input type="text" size="33" id="object_name_{containerId}" name="rows" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="table_columns">[L_OBJECT_CLASS]</label>
+                            </td>
+                            <td colspan="3">
+                                <input type="text" size="33" id="object_class_{containerId}" name="cols" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><hr/></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="table_width">[L_OBJECT_ALIGNMENT]</label>
+                            </td>
+                            <td colspan="3">
+                                <select id="object_alignment_{containerId}">
+                                    <option value="default" selected=selected>[L_ALIGNMENT_DEFAULT]</option>
+                                    <option value="top">[L_VERTICAL_ALIGNMENT_TOP]</option>
+                                    <option value="middle">[L_VERTICAL_ALIGNMENT_MIDDLE]</option>
+                                    <option value="bottom">[L_VERTICAL_ALIGNMENT_BOTTOM]</option>
+                                    <option value="left">[L_ALIGNMENT_LEFT]</option>
+                                    <option value="right">[L_ALIGNMENT_RIGHT]</option>                                                                
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="table_width">[L_OBJECT_WIDTH]</label>
+                            </td>
+                            <td>
+                                <input type="text" size="5" id="object_width_{containerId}" />
+                            </td>
+                            <td>
+                                <label for="table_width">[L_OBJECT_HEIGHT]</label>
+                            </td>
+                            <td>
+                                <input type="text" size="5" id="object_height_{containerId}" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><hr/></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="table_rows">[L_OBJECT_ALTHTML]</label>
+                            </td>
+                            <td colspan="3">
+                                <textarea cols="30" rows="2" id="object_althtml_{containerId}"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="4"><hr/></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="table_rows">[L_OBJECT_CODEBASE]</label>
+                            </td>
+                            <td colspan="3">
+                                <input type="text" size="33" id="object_codebase_{containerId}" name="rows" />
+                            </td>
+                        </tr>
+                    </table>       
+                </div>
+            </td>
+         </tr>
+    </table>
+</div>
+<div id="objectParameters_{containerId}" class="dialogPanelContainer">
+    <table class="dialogPanels">
+        <tr>
+            <td class="ribbonPanel ui-widget-content align-top">
+                <div class="dialogPanelInnerContainer">
+                    <table border="0" cellspacing="0">
+                        <tr>
+                            <td>
+                                <div class="parameterWidgetContainer" id="object_parameter_container_{containerId}">
+                             
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>

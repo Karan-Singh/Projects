@@ -1,0 +1,83 @@
+html {
+    -ro-contextaction-add:
+        thesaurus-context,
+        spellcheck-context,
+        cut,
+        copy,
+        paste,
+        select-all,
+        font-family-context,
+        font-size-default,
+        font-size-8,
+        font-size-9,
+        font-size-10,
+        font-size-11,
+        font-size-12,
+        font-size-14,
+        font-size-16,
+        font-size-18,
+        font-size-20,
+        font-size-22,
+        font-size-24,
+        font-size-26,
+        font-size-28,
+        font-size-36,
+        font-size-48,
+        font-size-72,
+        align-left,
+        align-center,
+        align-right,
+        align-justify,
+        bold,
+        italic,
+        underline,
+        strikethrough,
+        script-super,
+        script-sub,
+        insert-table-dialog;
+}
+
+table{
+    -ro-contextaction-add: delete-table,
+        auto-fit-table-content,
+        insert-table-caption,
+        delete-table-caption,
+        insert-paragraph-before-table,
+        insert-paragraph-after-table,
+        table-properties-dialog,
+        column-properties-dialog,
+        insert-column-before,
+        insert-column-after,
+        delete-column,
+        row-properties-dialog,
+        insert-row-before,
+        insert-row-after,
+        delete-row,
+        cell-properties-dialog,
+        merge-cells,
+        split-cell-dialog;
+}
+
+ol, ul, li {
+    -ro-contextaction-add: list-properties-dialog;
+}
+
+hr {
+    -ro-contextaction-add: horizontal-line-properties-dialog;
+}
+
+object {
+    -ro-contextaction-add: object-properties-dialog;
+}
+
+img {
+    -ro-contextaction-add: image-properties-dialog;
+}
+
+a[href] {
+    -ro-contextaction-add: hyperlink-properties-dialog, remove-hyperlink;
+}
+
+a[id] {
+    -ro-contextaction-add: bookmark-properties-dialog, remove-bookmark;
+}

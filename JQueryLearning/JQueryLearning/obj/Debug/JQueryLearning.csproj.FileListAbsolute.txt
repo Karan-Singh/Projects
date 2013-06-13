@@ -1,0 +1,27 @@
+C:\Documents and Settings\gunkarnjit.singh\My Documents\Visual Studio 2008\Projects\JQueryLearning\JQueryLearning\bin\JQueryLearning.dll
+C:\Documents and Settings\gunkarnjit.singh\My Documents\Visual Studio 2008\Projects\JQueryLearning\JQueryLearning\bin\JQueryLearning.pdb
+C:\Documents and Settings\gunkarnjit.singh\My Documents\Visual Studio 2008\Projects\JQueryLearning\JQueryLearning\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\gunkarnjit.singh\My Documents\Visual Studio 2008\Projects\JQueryLearning\JQueryLearning\obj\Debug\JQueryLearning.dll
+C:\Documents and Settings\gunkarnjit.singh\My Documents\Visual Studio 2008\Projects\JQueryLearning\JQueryLearning\obj\Debug\JQueryLearning.pdb
+F:\Karan\Projects\JQueryLearning\JQueryLearning\bin\JQueryLearning.dll
+F:\Karan\Projects\JQueryLearning\JQueryLearning\bin\JQueryLearning.pdb
+F:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Debug\JQueryLearning.dll
+F:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Debug\JQueryLearning.pdb
+E:\Karan\Projects\JQueryLearning\JQueryLearning\bin\JQueryLearning.dll
+E:\Karan\Projects\JQueryLearning\JQueryLearning\bin\JQueryLearning.pdb
+E:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Debug\JQueryLearning.dll
+E:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Debug\JQueryLearning.pdb
+E:\Karan\Projects\JQueryLearning\JQueryLearning\bin\CodeContracts\JQueryLearning.Contracts.dll
+E:\Karan\Projects\JQueryLearning\JQueryLearning\bin\CodeContracts\JQueryLearning.Contracts.pdb
+E:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Debug\JQueryLearning.csprojResolveAssemblyReference.cache
+E:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Debug\Decl\JQueryLearning.dll
+E:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Debug\Decl\JQueryLearning.pdb
+E:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Debug\JQueryLearningccrefgen.rsp
+E:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Debug\JQueryLearning.rewritten
+F:\Karan\Projects\JQueryLearning\JQueryLearning\bin\CodeContracts\JQueryLearning.Contracts.dll
+F:\Karan\Projects\JQueryLearning\JQueryLearning\bin\CodeContracts\JQueryLearning.Contracts.pdb
+F:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Debug\Decl\JQueryLearning.dll
+F:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Debug\Decl\JQueryLearning.pdb
+F:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Debug\JQueryLearningccrefgen.rsp
+F:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Debug\JQueryLearning.rewritten
+F:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Debug\JQueryLearning.csprojResolveAssemblyReference.cache

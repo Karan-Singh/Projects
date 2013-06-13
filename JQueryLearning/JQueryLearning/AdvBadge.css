@@ -1,0 +1,30 @@
+﻿
+        .dragImgClass{
+            position:absolute;  /*DO NOT TOUCH this propoerty. Resizable :- Will prevent implicit repositioning of the neighbouring imgs.*/
+        }
+        .dragClass {
+                font-family: Tahoma, sans;
+                color: black;
+                background: orange;
+                border: 1px solid orange;
+                width: 150px;
+                height:auto;
+                padding: 5px;                   
+            }        
+        textarea {
+                font-family: inherit;
+                color: inherit;
+                background: transparent;
+                border: 0;
+                width: 100%;
+                height: 100%;
+                resize: none;
+            }
+            
+       /*.ui-resizable-helper { border: 2px dotted #00F; }*/       
+       /*.obj-selected { border:2px dotted #00f; }*/
+               
+       #ParentDIV {                              
+               position: relative;
+               margin-left:200px; width:800px; height:500px; background:lightgray;
+            }

@@ -1,0 +1,114 @@
+<ul>
+    <li>
+        <a href="#insertHyperLink_{containerId}">[L_INSERT_HYPERLINK_TAB]</a>    
+    </li>
+</ul>
+<div id="insertHyperLink_{containerId}" class="dialogPanelContainer">
+    <table class="dialogPanels" width="100%" cellpadding="0" border="0">
+        <tr>
+            <td class="ribbonPanel ui-widget-content">
+                <div class="dialogPanelInnerContainer">
+                    <div>
+                        <table border="0" cellspacing="0">
+                            <tr>
+                                <td>
+                                    <label for="table_rows">[L_INSERT_HYPERLINK_TARGET]</label>
+                                </td>
+                                <td>
+                                    <select id="targetChooser_{containerId}">
+                                        <option value="">[L_INSERT_HYPERLINK_TARGET_DEFAULT]</option>
+                                        <option value="_self">[L_INSERT_HYPERLINK_TARGET_SELF]</option>
+                                        <option value="_top">[L_INSERT_HYPERLINK_TARGET_WHOLEPAGE]</option>
+                                        <option value="_blank">[L_INSERT_HYPERLINK_TARGET_BLANK]</option>
+                                        <option value="_parent">[L_INSERT_HYPERLINK_TARGET_PARENT]</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="table_rows">[L_INSERT_HYPERLINK_TEXT]</label>
+                                </td>
+                                <td>
+                                    <input type="text" size="30" id="hyperlink_text_field_{containerId}" name="rows" />
+                                </td>
+                            </tr>
+                             <tr>
+                                <td>
+                                    <label for="table_rows">[L_INSERT_HYPERLINK_TITLE]</label>
+                                </td>
+                                <td>
+                                    <input type="text" size="30" id="hyperlink_title_field_{containerId}" name="rows" />
+                                </td>
+                            </tr>
+                        </table>
+                    </div>   
+                </div>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <table border="0" cellspacing="0" width="100%" cellpadding="0">
+                    <tr>
+                        <td>
+                            <div id="insertHyperlinkTabContainer_{containerId}" class="dialogInnerTabs">
+                                <ul>
+                                    <li>
+                                        <a href="#insertHyperlinkExternalResource_{containerId}">[L_INSERT_HYPERLINK_EXTERNAL_RESOURCE]</a>    
+                                    </li>
+                                    <li>
+                                        <a href="#insertHyperlinkBookmark_{containerId}">[L_INSERT_HYPERLINK_BOOKMARK]</a>    
+                                    </li>
+                                </ul>
+                                <div id="insertHyperlinkExternalResource_{containerId}">
+                                    <table>
+                                        <tr>
+                                            <td colspan="2"><p>[L_INSERT_HYPERLINK_DESCRIPTION]</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <label for="table_rows">[L_INSERT_HYPERLINK_URL]</label>
+                                            </td>
+                                            <td>
+                                                <input type="text" size="30" id="hyperlink_url_field_{containerId}" name="rows" />
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="2">
+                                                <button id="hyperlink_open_file_button_{containerId}" title="{L_OPEN_FILECHOOSER}">[L_OPEN_FILECHOOSER]</button>
+                                                <button id="link_open_webdav_button_{containerId}"  title="{L_WEBDAV_OPEN}">[L_WEBDAV_OPEN]</button>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                                <div id="insertHyperlinkBookmark_{containerId}">
+                                    <table>
+                                        <tr>
+                                            <td><p>[L_BOOKMARK_NAME]</p></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input type="text" style="width: 300px; padding: 1px 0px; border-width: 1px;" id="bookmark_text_field_{containerId}" name="rows" />
+                                                <div style="position: absolute; width: 305px; height: 20px; margin-top: -18px; margin-left: -2px;"></div>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <ol class="selectableList" id="bookmark_blockelements_{containerId}">
+                                                </ol>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr style="color: red;">
+            <td style="font-size: 0.9em;">
+                <span id="no_hyperlink_{containerId}" style="display: none;">[L_NO_HYPERLINK_SPECIFIED]</span>&nbsp;
+            </td>
+        </tr>
+    </table>
+</div>

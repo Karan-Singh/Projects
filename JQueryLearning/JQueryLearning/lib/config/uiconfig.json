@@ -1,0 +1,555 @@
+{
+    "toolbar": {
+        "quickactions": [
+            "new-document",
+            "load-document-dialog",
+            "load-url-dialog",
+            "save-document",
+            "save-document-as-dialog",
+            "undo",
+            "redo",
+            "information-dialog"
+        ],
+        "ribbons": {
+            "options": {
+                "sortabletabs": "true"
+            },
+            "elements": {
+                "L_CONTENT_TAB": {
+                    "L_DOCUMENT_PANE": {
+                        "options": {
+                            "size": "mediumPanel"
+                        },
+                        "actions": [
+                            "new-document",
+                            "load-document-dialog",
+                            "load-url-dialog",
+                            "save-document",
+                            "save-document-as-dialog",
+                            "print",
+                            "show-in-browser",
+                            "document-statistics-dialog",
+                            "page-properties-dialog",
+                            "information-dialog"
+                        ]
+                    }                    
+                },
+                "L_EDIT_TAB": {
+                    "L_FORMAT_PANE": {
+                        "options": {
+                            "size": "smallPanel"
+                        },
+                        "actions": [
+                            "bold",
+                            "italic",
+                            "underline",
+                            "script-sub",
+                            "script-super",
+                            "strikethrough",
+                            "color-dialog",
+                            "backgroundcolor-dialog",
+                            "change-case-dialog",
+                            "clear-formatting"
+                        ]
+                    
+                    },
+                    "L_PARAGRAPH_PANE": {
+                        "options": {
+                            "size": "smallPanel"
+                        },
+                        "actions": [
+                            "align-left",
+                            "align-center",
+                            "align-right",
+                            "align-justify",
+                            "list-ordered",
+                            "list-unordered",
+                            "decrease-indent",
+                            "increase-indent"
+                        ]
+                    },
+                    "L_FONT_PANE": {
+                        "options": {
+                            "size": "dropdownPanel"
+                        },
+                        "comboactions": {
+                            "font-size": {
+                                "options": {
+                                    "comboWidth": "75",
+                                    "dropdownWidth": "75"
+                                },
+                                "dropdownactions": {
+                                    "font-size-default": "",
+                                    "font-size-8": "",
+                                    "font-size-9": "",
+                                    "font-size-10": "",
+                                    "font-size-11": "",
+                                    "font-size-12": "",
+                                    "font-size-14": "",
+                                    "font-size-16": "",
+                                    "font-size-18": "",
+                                    "font-size-20": "",
+                                    "font-size-22": "",
+                                    "font-size-24": "",
+                                    "font-size-26": "",
+                                    "font-size-28": "",
+                                    "font-size-36": "",
+                                    "font-size-48": "",
+                                    "font-size-72": ""
+                                }
+                            },
+                            "font-family": {
+                                "options": {
+                                    "comboWidth": "75",
+                                    "dropdownWidth": "75"
+                                },
+                                "dropdownactions": {
+                                    "font-family-default": "",
+                                    "font-family-serif": "",
+                                    "font-family-sans-serif": "",
+                                    "font-family-cursive": "",
+                                    "font-family-fantasy": "",
+                                    "font-family-monospace": ""
+                                }
+                            }
+                        }
+                    },
+                    "L_CLIPBOARD_PANE": {
+                        "options": {
+                            "size": "mediumPanel"
+                        },
+                        "actions": [
+                            "cut",
+                            "copy",
+                            "paste",
+                            "paste-special-dialog"
+                        ]
+                    },
+                    "L_EDITING_PANE": {
+                        "options": {
+                            "size": "mediumPanel"
+                        },
+                        "actions": [
+                            "undo",
+                            "redo",
+                            "find-replace-dialog",
+                            "select-all"
+                        ]
+                    }
+                },
+                "L_INSERT_TAB": {
+                    "L_OBJECT_PANE": {
+                        "options": {
+                            "size": "mediumPanel"
+                        },
+                        "actions": [
+                            "insert-image-dialog",
+                            "insert-hyperlink-dialog",
+                            "insert-bookmark-dialog",
+                            "insert-crossreference-dialog",
+                            "insert-container",
+                            "insert-object-dialog",
+                            "insert-horizontal-line"
+                        ]
+                    
+                    },
+                    "L_SPECIAL_PANE": {
+                        "options": {
+                            "size": "mediumPanel"
+                        },
+                        "actions": [
+                            "insert-date",
+                            "insert-special-character-dialog",
+                            "insert-structure-template-dialog"
+                        ]
+                    },
+                    "L_BREAKS_PANE": {
+                        "options": {
+                            "size": "mediumPanel"
+                        },
+                        "actions": [
+                            "insert-page-break",
+                            "insert-line-break"
+                        ]
+                    },
+                    "L_SEMANTIC_PANE": {
+                        "options": {
+                            "size": "mediumPanel"
+                        },
+                        "actions": [
+                            "abbr",
+                            "acronym",
+                            "cite",
+                            "code",
+                            "dfn",
+                            "em",
+                            "kbd",
+                            "samp",
+                            "strong",
+                            "var",
+                            "q"
+                        ]
+                    
+                    },
+                    "L_INSERT_TABLE_PANE": {
+                        "options": {
+                            "size": "largePanel"
+                        },
+                        "actions": [
+                            "insert-table-dialog"
+                        ]
+                    }
+                },
+                "L_TABLE_TAB": {
+                    "L_TABLE_INSERT_PANE": {
+                        "options": {
+                            "size": "largePanel"
+                        },
+                        "actions": [
+                            "insert-table-dialog"
+                        ]
+                    },
+                    "L_TABLE_PANE": {
+                        "options": {
+                            "size": "mediumPanel"
+                        },
+                        "actions": [
+                            "split-table",
+                            "merge-table",
+                            "delete-table",
+                            "table-properties-dialog",
+                            "convert-table",
+                            "auto-fit-table-content"
+                        ]
+                    },
+                    "L_ROW_PANE": {
+                        "options": {
+                            "size": "mediumPanel"
+                        },
+                        "actions": [
+                            "insert-row-before",
+                            "insert-row-after",
+                            "delete-row",
+                            "row-properties-dialog"
+                        ]
+                    },
+                    "L_COLUMN_PANE": {
+                        "options": {
+                            "size": "mediumPanel"
+                        },
+                        "actions": [
+                            "insert-column-before",
+                            "insert-column-after",
+                            "delete-column",
+                            "column-properties-dialog"
+                        ]
+                    },
+                    "L_CELL_PANE": {
+                        "options": {
+                            "size": "mediumPanel"
+                        },
+                        "actions": [
+                            "merge-cells",
+                            "split-cell-dialog",
+                            "cell-properties-dialog"
+                        ]
+                    }
+                },
+                "L_CONTAINER_TAB": {
+                    "L_OPERATIONS_PANE": {
+                        "options": {
+                            "size": "mediumPanel"
+                        },
+                        "actions": [
+                            "insert-container",
+                            "delete-container",
+                            "merge-container",
+                            "split-container",
+                            "select-container"
+                        ]
+                    }
+                },
+                "L_VIEW_TAB": {
+                    "L_TEXTSIZE_PANE": {
+                        "options": {
+                            "size": "smallPanel"
+                        },
+                        "actions": [
+                            "text-size-small",
+                            "text-size-normal",
+                            "text-size-large",
+                            "increase-text-size",
+                            "decrease-text-size"
+                        ]
+                    },
+                    "L_ZOOM_PANE": {
+                        "options": {
+                            "size": "mediumPanel"
+                        },
+                        "actions": [
+                            "increase-zoom",
+                            "decrease-zoom",
+                            "zoom-100"
+                        ]
+                    },
+                    "L_MARKERS_PANE": {
+                        "options": {
+                            "size": "mediumPanel"
+                        },
+                        "actions": [
+                            "toggle-show-marks",
+                            "toggle-show-table-grid",
+                            "toggle-show-container-grid",
+                            "toggle-show-semantic-elements"
+                        ]
+                    },
+                    "L_DOCUMENT_VIEW_PANE": {
+                        "options": {
+                            "size": "largePanel"
+                        },
+                        "actions": [
+                            "page-mode-continuous",
+                            "page-mode-single-sided",
+                            "page-mode-double-sided"
+                        ]
+                    }
+                },
+                "L_REVIEW_TAB": {
+                    "L_ANNOTATION_PANE": {
+                        "options": {
+                            "size": "mediumPanel"
+                        },
+                        "actions": [
+                            "insert-annotation-dialog",
+                            "edit-annotation-dialog",
+                            "remove-annotation"
+                        ]
+                    },
+                    "L_VIEW_PANE": {
+                        "options": {
+                            "size": "mediumPanel"
+                        },
+                        "actions": [
+                            "show-annotations-bubbles",
+                            "show-annotations-inline"
+                        ]
+                    },
+                    "L_PROOFING_PANE": {
+                        "options": {
+                            "size": "mediumPanel"
+                        },
+                        "actions": [
+                            "toggle-auto-spellcheck",
+                            "spellcheck-dialog",
+                            "thesaurus-dialog",
+                            "auto-correct-dialog",
+                            "change-language-dialog"
+                        ]
+                    }
+                }
+            }
+        }
+    },
+    "contextmenu": {
+		"linguisticsgroup": {
+		    "actions": [
+                "thesaurus-context",
+                "spellcheck-context"
+			]
+		},
+        "clipboardgroup": {
+            "actions": [
+                "cut",
+                "copy",
+                "paste"
+            ]
+        },
+        "selectgroup": {
+            "actions": [
+                "select-all"
+            ]
+        },
+        "formattinggroup": {
+            "submenus": {
+                "fontfamilymenu": {
+                    "name": "L_FONT_FAMILY",
+                    "fontfamilygroup": {
+                        "actions": [
+                            "font-family-context"
+                        ]
+                    }
+                },
+                "fontsizemenu": {
+                    "name": "L_FONT_SIZE",
+                    "fontsizegroup": {
+                        "actions": [
+                            "font-size-default",
+                            "font-size-8",
+                            "font-size-9",
+                            "font-size-10",
+                            "font-size-11",
+                            "font-size-12",
+                            "font-size-14",
+                            "font-size-16",
+                            "font-size-18",
+                            "font-size-20",
+                            "font-size-22",
+                            "font-size-24",
+                            "font-size-26",
+                            "font-size-28",
+                            "font-size-36",
+                            "font-size-48",
+                            "font-size-72"
+                        ]
+                    }           
+                },
+                "alignmenu": {
+                    "name": "L_ALIGN",
+                    "aligngroup": {
+                        "actions": [
+                            "align-left",
+                            "align-center",
+                            "align-right",
+                            "align-justify"
+                         ]
+                     }
+                },
+                "stylemenu": {
+                    "name": "L_CONTEXT_STYLE",
+                    "stylegroup": {
+                        "actions": [
+                            "bold",
+                            "italic",
+                            "underline",
+                            "strikethrough"
+                        ]
+                    },
+                    "scriptgroup": {
+                        "actions": [
+                          "script-super",
+                          "script-sub"
+                        ]
+                    }
+                }
+            }
+        },
+        "tablegroup": {
+            "submenus": {
+                "tablemenu": {
+                    "name": "L_TABLE_TAB",
+                    "tableinsertgroup": {
+                        "actions": [
+                            "insert-table-dialog"
+                        ]
+                    },
+                    "tablesubgroup": {
+                        "actions": [
+                            "delete-table",
+                            "auto-fit-table-content"
+                        ]
+                    },
+                    "tablecaptiongroup": {
+                        "actions": [
+                            "insert-table-caption",
+                            "delete-table-caption"
+                        ]
+                    },
+                    "tableinsertparagraphgroup": {
+                        "actions": [
+                            "insert-paragraph-before-table",
+                            "insert-paragraph-after-table"
+                        ]
+                    },
+                    "tablepropertiesgroup": {
+                        "actions": [
+                            "table-properties-dialog"
+                        ]
+                    },
+                    "cellrowcolumnpropertiesgroup": {
+                        "submenus": {
+                            "columnpropertiesmenu": {
+                                "name": "L_COLUMN_PANE",
+                                "columngroup": {
+                                    "actions": [
+                                        "column-properties-dialog",
+                                        "insert-column-before",
+                                        "insert-column-after",
+                                        "delete-column"
+                                    ]
+                                }
+                            },
+                            "rowpropertiesmenu": {
+                                "name": "L_ROW_PANE",
+                                "rowgroup": {
+                                    "actions": [
+                                        "row-properties-dialog",
+                                        "insert-row-before",
+                                        "insert-row-after",
+                                        "delete-row"
+                                    ]
+                                }
+                            },
+                            "cellpropertiesmenu": {
+                                "name": "L_CELL_PANE",
+                                "cellgroup": {
+                                    "actions": [
+                                        "cell-properties-dialog",
+                                        "merge-cells",
+                                        "split-cell-dialog"
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "propertiesgroup": {
+            "actions": [
+                "horizontal-line-properties-dialog",
+                "object-properties-dialog",
+				"image-properties-dialog",
+                "list-properties-dialog",
+				"hyperlink-properties-dialog",
+                "bookmark-properties-dialog",
+                "remove-hyperlink",
+                "remove-bookmark"
+            ]
+        }
+    },
+    "inplacetoolbar": {
+          "row1": [
+              "font-family",
+              "font-size",
+              "cut",
+              "copy",
+              "paste",
+              "increase-font-size",
+              "decrease-font-size"
+              ],
+           "row2": [
+              "bold",
+              "italic",
+              "underline",
+              "align-left",
+              "align-center",
+              "align-right",
+              "align-justify",
+              "color",
+              "background-color",
+              "decrease-indent",
+              "increase-indent",
+              "list-unordered",
+              "list-ordered"
+              ],
+           "row3": [
+              "delete-table",
+              "delete-column",
+              "delete-row",
+              "insert-column-before",
+              "insert-column-after",
+              "insert-row-before",
+              "insert-row-after"
+              ]           
+      }
+ }

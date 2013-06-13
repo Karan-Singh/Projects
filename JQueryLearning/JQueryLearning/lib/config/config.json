@@ -1,0 +1,252 @@
+{
+    "defaultlanguage": "en",
+    "presetcolors": {
+        "color": [
+            {
+                "rgb": "#DC143C",
+                "desc": "Crimson" 
+            },
+            {
+                "rgb": "#556B2F",
+                "desc": "Dark olive green" 
+            },
+            {
+                "rgb": "#F0FFF0",
+                "desc": "F0FFF0" 
+            }
+        ] 
+    },
+    "presetsymbols": [
+        "913",
+        "914",
+        "915",
+        "916",
+        "917",
+        "918",
+        "919",
+        "920",
+        "921",
+        "922",
+        "923",
+        "924",
+        "925",
+        "926",
+        "927",
+        "928",
+        "929",
+        "931" 
+    ],
+    "thesaurus": [
+        {
+            "options": {
+                "engine": "wintertree" 
+            },
+            "languages": [
+                {
+                    "language": "en",
+                    "dictionary": "../spellcheck/american-thesaurus.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "en-GB",
+                    "dictionary": "../spellcheck/british-thesaurus.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "en-CA",
+                    "dictionary": "../spellcheck/canadian-thesaurus.zip",
+                    "version": 100 
+                }
+            ] 
+        }
+    ],
+    "spellchecker": [
+        {
+            "options": {
+                "engine": "wintertree" 
+            },
+            "languages": [
+                {
+                    "language": "en-US",
+                    "dictionary": "../spellcheck/americanenglish.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "en",
+                    "dictionary": "../spellcheck/americanenglish.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "en-US-x-legal",
+                    "dictionary": "../spellcheck/uslegal.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "en-US-x-medical",
+                    "dictionary": "../spellcheck/usmed.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "en-GB",
+                    "dictionary": "../spellcheck/british.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "en-GB-x-legal",
+                    "dictionary": "../spellcheck/brlegal.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "en-GB-x-medical",
+                    "dictionary": "../spellcheck/brmed.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "en-CA",
+                    "dictionary": "../spellcheck/canadianenglish.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "da-DK",
+                    "dictionary": "../spellcheck/danish.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "da",
+                    "dictionary": "../spellcheck/danish.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "fi-FI",
+                    "dictionary": "../spellcheck/finnish.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "fi",
+                    "dictionary": "../spellcheck/finnish.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "it-IT",
+                    "dictionary": "../spellcheck/italian.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "it",
+                    "dictionary": "../spellcheck/italian.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "no-NO",
+                    "dictionary": "../spellcheck/norwegian.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "no",
+                    "dictionary": "../spellcheck/norwegian.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "sv-SE",
+                    "dictionary": "../spellcheck/swedish.zip",
+                    "version": 101 
+                },
+                {
+                    "language": "sv",
+                    "dictionary": "../spellcheck/swedish.zip",
+                    "version": 101 
+                },
+                {
+                    "language": "de-DE",
+                    "dictionary": "../spellcheck/german-new.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "de",
+                    "dictionary": "../spellcheck/german-new.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "es-ES",
+                    "dictionary": "../spellcheck/spanish.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "es",
+                    "dictionary": "../spellcheck/spanish.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "nl-NL",
+                    "dictionary": "../spellcheck/dutch.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "nl",
+                    "dictionary": "../spellcheck/dutch.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "fr-FR",
+                    "dictionary": "../spellcheck/french.zip",
+                    "version": 100 
+                },
+                {
+                    "language": "fr",
+                    "dictionary": "../spellcheck/french.zip",
+                    "version": 100 
+                }
+            ] 
+        }
+    ],
+    "styletemplateproviders": {
+        "authorsheet": "true",
+        "usersheet": "true" 
+    },
+    "autocorrect": {
+        "enabled": "true",
+        "correctors": {
+            "autohyperlinking": "true",
+            "sentencestartuppercase": "true",
+            "cellstartuppercase": "true",
+            "expressionreplacer": "true",
+            "wordstartcapslock": "true" 
+        },
+        "presetcorrections": {
+            "": {
+                "eong": "edit-on NG",
+                "EONG": "edit-on NG",
+                "RO": "RealObjects" 
+            },
+            "en-US": {
+                "i.e.": "that is",
+                "e.g.": "for example" 
+            },
+            "de-DE": {
+                "d.h.": "das hei�t",
+                "evtl.": "eventuell",
+                "bzw.": "bzw." 
+            },
+            "fr-FR": {
+                "s.o.": "sans objet",
+                "n.a.": "non applicable",
+                "p.": "page" 
+            } 
+        } 
+    },
+    "saveuistate": "true",
+    "enablestyletemplatepanel": "true",
+    "enabledocumentpalette": "true",
+    "enablestatusbar": "true",
+    "allowdefaultcolors": "true",
+    "allowpresetcolors": "true",
+    "allowfreecolors": "true",
+    "draggable": "true",
+    "resizable": "true",
+    "toolbarsortablepanes": "true",
+    "documentmode": "document",
+    "automaticcanvassize": "false",
+    "enableinplacetoolbar": "true",
+    "numericcharacterreferences": "true",
+    "enabledefaultparagraphstyles": "true"
+}

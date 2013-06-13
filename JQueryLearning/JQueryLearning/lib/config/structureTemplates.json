@@ -1,0 +1,24 @@
+{
+    "Letter Templates": {
+        "templateArray": [
+            {
+                "Letter Header": {
+                    "URL": "../config/structureTemplates/letterHeader.html",
+                    "description": "Simple letter header"
+                }
+            },
+            {
+                "Signature": {
+                    "URL": "../config/structureTemplates/signature.html",
+                    "description": "Signature space for written signatures."
+                }
+            },
+            {
+                "Attachment declaration": {
+                    "URL": "../config/structureTemplates/letterFooter.html",
+                    "description": "Simple letter footer to declare attachments"
+                }
+            }
+        ]
+    }
+}

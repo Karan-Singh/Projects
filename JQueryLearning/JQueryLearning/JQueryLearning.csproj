@@ -1,0 +1,1776 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC76C27B-DF39-48AD-BFAD-307E5A5186BF}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JQueryLearning</RootNamespace>
+    <AssemblyName>JQueryLearning</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>4.0</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <UseIISExpress>false</UseIISExpress>
+    <TargetFrameworkProfile />
+    <CodeContractsAssemblyMode>1</CodeContractsAssemblyMode>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>True</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRuntimeSkipQuantifiers>False</CodeContractsRuntimeSkipQuantifiers>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsNonNullObligations>False</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>False</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>False</CodeContractsArithmeticObligations>
+    <CodeContractsEnumObligations>False</CodeContractsEnumObligations>
+    <CodeContractsRedundantAssumptions>False</CodeContractsRedundantAssumptions>
+    <CodeContractsInferRequires>False</CodeContractsInferRequires>
+    <CodeContractsInferEnsures>False</CodeContractsInferEnsures>
+    <CodeContractsInferObjectInvariants>False</CodeContractsInferObjectInvariants>
+    <CodeContractsSuggestAssumptions>False</CodeContractsSuggestAssumptions>
+    <CodeContractsSuggestRequires>True</CodeContractsSuggestRequires>
+    <CodeContractsSuggestEnsures>False</CodeContractsSuggestEnsures>
+    <CodeContractsSuggestObjectInvariants>False</CodeContractsSuggestObjectInvariants>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>True</CodeContractsShowSquigglies>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsEmitXMLDocs>True</CodeContractsEmitXMLDocs>
+    <CodeContractsCustomRewriterAssembly />
+    <CodeContractsCustomRewriterClass />
+    <CodeContractsLibPaths />
+    <CodeContractsExtraRewriteOptions />
+    <CodeContractsExtraAnalysisOptions />
+    <CodeContractsBaseLineFile />
+    <CodeContractsCacheAnalysisResults>True</CodeContractsCacheAnalysisResults>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsReferenceAssembly>Build</CodeContractsReferenceAssembly>
+    <CodeContractsAnalysisWarningLevel>0</CodeContractsAnalysisWarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+    <CodeContractsEnableRuntimeChecking>True</CodeContractsEnableRuntimeChecking>
+    <CodeContractsRuntimeOnlyPublicSurface>False</CodeContractsRuntimeOnlyPublicSurface>
+    <CodeContractsRuntimeThrowOnFailure>True</CodeContractsRuntimeThrowOnFailure>
+    <CodeContractsRuntimeCallSiteRequires>False</CodeContractsRuntimeCallSiteRequires>
+    <CodeContractsRuntimeSkipQuantifiers>False</CodeContractsRuntimeSkipQuantifiers>
+    <CodeContractsRunCodeAnalysis>False</CodeContractsRunCodeAnalysis>
+    <CodeContractsNonNullObligations>False</CodeContractsNonNullObligations>
+    <CodeContractsBoundsObligations>False</CodeContractsBoundsObligations>
+    <CodeContractsArithmeticObligations>False</CodeContractsArithmeticObligations>
+    <CodeContractsEnumObligations>False</CodeContractsEnumObligations>
+    <CodeContractsRedundantAssumptions>False</CodeContractsRedundantAssumptions>
+    <CodeContractsInferRequires>False</CodeContractsInferRequires>
+    <CodeContractsInferEnsures>False</CodeContractsInferEnsures>
+    <CodeContractsInferObjectInvariants>False</CodeContractsInferObjectInvariants>
+    <CodeContractsSuggestAssumptions>False</CodeContractsSuggestAssumptions>
+    <CodeContractsSuggestRequires>True</CodeContractsSuggestRequires>
+    <CodeContractsSuggestEnsures>False</CodeContractsSuggestEnsures>
+    <CodeContractsSuggestObjectInvariants>False</CodeContractsSuggestObjectInvariants>
+    <CodeContractsRunInBackground>True</CodeContractsRunInBackground>
+    <CodeContractsShowSquigglies>True</CodeContractsShowSquigglies>
+    <CodeContractsUseBaseLine>False</CodeContractsUseBaseLine>
+    <CodeContractsEmitXMLDocs>True</CodeContractsEmitXMLDocs>
+    <CodeContractsCustomRewriterAssembly />
+    <CodeContractsCustomRewriterClass />
+    <CodeContractsLibPaths />
+    <CodeContractsExtraRewriteOptions />
+    <CodeContractsExtraAnalysisOptions />
+    <CodeContractsBaseLineFile />
+    <CodeContractsCacheAnalysisResults>True</CodeContractsCacheAnalysisResults>
+    <CodeContractsRuntimeCheckingLevel>Full</CodeContractsRuntimeCheckingLevel>
+    <CodeContractsReferenceAssembly>Build</CodeContractsReferenceAssembly>
+    <CodeContractsAnalysisWarningLevel>0</CodeContractsAnalysisWarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ImageResizer, Version=0.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Neodynamic.WebControls.ImageDraw, Version=4.0.2000.0, Culture=neutral, PublicKeyToken=49ea6b0547247dc5, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Mobile" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1.jpg" />
+    <Content Include="2.jpg" />
+    <Content Include="3.jpg" />
+    <Content Include="4.jpg" />
+    <Content Include="5.jpg" />
+    <Content Include="5384-6pp.htm" />
+    <Content Include="5392_Redesign.aspx" />
+    <Content Include="5392_Redesign_II.aspx" />
+    <Content Include="AccessViewState.aspx" />
+    <Content Include="AdvBadge.css" />
+    <Content Include="AdvBadgeLibrary.js" />
+    <Content Include="AdvFilterDemo_FF.aspx" />
+    <Content Include="AdvFilter_IE.aspx" />
+    <Content Include="AjaxErrorTest.aspx" />
+    <Content Include="AJAX_TIMER_Demo.aspx" />
+    <Content Include="AlignmentTest.aspx" />
+    <Content Include="AngularJS\FirstDemo.aspx" />
+    <Content Include="autocomplete_test.aspx" />
+    <Content Include="Avery5392.aspx" />
+    <Content Include="Avery_new.aspx" />
+    <Content Include="BackStretch\examples\basic.html" />
+    <Content Include="BackStretch\examples\click.html" />
+    <Content Include="BackStretch\examples\coffee.jpg" />
+    <Content Include="BackStretch\examples\pot-holder.jpg" />
+    <Content Include="BackStretch\examples\Sample_Page.htm" />
+    <Content Include="BackStretch\examples\slideshow.html" />
+    <Content Include="BackStretch\jquery.backstretch.js" />
+    <Content Include="BackStretch\jquery.backstretch.min.js" />
+    <Content Include="Badge-Markup.html" />
+    <Content Include="Badge.aspx" />
+    <Content Include="BadgeGrid.jpg" />
+    <Content Include="BadgePrintingPosition.aspx" />
+    <Content Include="Badge_5160.htm" />
+    <Content Include="Badge_ImprovedContent.htm" />
+    <Content Include="Badge_Sample.htm" />
+    <Content Include="bin\ImageResizer.dll" />
+    <Content Include="bin\JQueryLearning.dll" />
+    <Content Include="bin\JQueryLearning.pdb" />
+    <Content Include="bin\Neodynamic.WebControls.ImageDraw.dll" />
+    <Content Include="BrowserCloseMethodCall.aspx" />
+    <Content Include="CallWCFService.aspx" />
+    <Content Include="CanvasDemo.aspx" />
+    <Content Include="carol.css" />
+    <Content Include="Chapter3.aspx" />
+    <Content Include="Chapter4.aspx" />
+    <Content Include="Chapter5.aspx" />
+    <Content Include="Chapter6.aspx" />
+    <Content Include="contact_info.aspx" />
+    <Content Include="Copy of 5384-6pp.htm" />
+    <Content Include="Data-Tag-Tuning.aspx" />
+    <Content Include="DataBinding_Demo.aspx" />
+    <Content Include="DemoFormatMask.aspx" />
+    <Content Include="demoScript.js" />
+    <Content Include="development-bundle\AUTHORS.txt" />
+    <Content Include="development-bundle\demos\accordion\collapsible.html" />
+    <Content Include="development-bundle\demos\accordion\custom-icons.html" />
+    <Content Include="development-bundle\demos\accordion\default.html" />
+    <Content Include="development-bundle\demos\accordion\fillspace.html" />
+    <Content Include="development-bundle\demos\accordion\hoverintent.html" />
+    <Content Include="development-bundle\demos\accordion\index.html" />
+    <Content Include="development-bundle\demos\accordion\mouseover.html" />
+    <Content Include="development-bundle\demos\accordion\no-auto-height.html" />
+    <Content Include="development-bundle\demos\accordion\sortable.html" />
+    <Content Include="development-bundle\demos\addClass\default.html" />
+    <Content Include="development-bundle\demos\addClass\index.html" />
+    <Content Include="development-bundle\demos\animate\default.html" />
+    <Content Include="development-bundle\demos\animate\index.html" />
+    <Content Include="development-bundle\demos\autocomplete\categories.html" />
+    <Content Include="development-bundle\demos\autocomplete\combobox.html" />
+    <Content Include="development-bundle\demos\autocomplete\custom-data.html" />
+    <Content Include="development-bundle\demos\autocomplete\default.html" />
+    <Content Include="development-bundle\demos\autocomplete\folding.html" />
+    <Content Include="development-bundle\demos\autocomplete\images\jqueryui_32x32.png" />
+    <Content Include="development-bundle\demos\autocomplete\images\jquery_32x32.png" />
+    <Content Include="development-bundle\demos\autocomplete\images\sizzlejs_32x32.png" />
+    <Content Include="development-bundle\demos\autocomplete\images\transparent_1x1.png" />
+    <Content Include="development-bundle\demos\autocomplete\images\ui-anim_basic_16x16.gif" />
+    <Content Include="development-bundle\demos\autocomplete\index.html" />
+    <Content Include="development-bundle\demos\autocomplete\london.xml" />
+    <Content Include="development-bundle\demos\autocomplete\maxheight.html" />
+    <Content Include="development-bundle\demos\autocomplete\multiple-remote.html" />
+    <Content Include="development-bundle\demos\autocomplete\multiple.html" />
+    <Content Include="development-bundle\demos\autocomplete\remote-jsonp.html" />
+    <Content Include="development-bundle\demos\autocomplete\remote-with-cache.html" />
+    <Content Include="development-bundle\demos\autocomplete\remote.html" />
+    <Content Include="development-bundle\demos\autocomplete\xml.html" />
+    <Content Include="development-bundle\demos\button\checkbox.html" />
+    <Content Include="development-bundle\demos\button\default.html" />
+    <Content Include="development-bundle\demos\button\icons.html" />
+    <Content Include="development-bundle\demos\button\index.html" />
+    <Content Include="development-bundle\demos\button\radio.html" />
+    <Content Include="development-bundle\demos\button\splitbutton.html" />
+    <Content Include="development-bundle\demos\button\toolbar.html" />
+    <Content Include="development-bundle\demos\datepicker\alt-field.html" />
+    <Content Include="development-bundle\demos\datepicker\animation.html" />
+    <Content Include="development-bundle\demos\datepicker\buttonbar.html" />
+    <Content Include="development-bundle\demos\datepicker\date-formats.html" />
+    <Content Include="development-bundle\demos\datepicker\date-range.html" />
+    <Content Include="development-bundle\demos\datepicker\default.html" />
+    <Content Include="development-bundle\demos\datepicker\dropdown-month-year.html" />
+    <Content Include="development-bundle\demos\datepicker\icon-trigger.html" />
+    <Content Include="development-bundle\demos\datepicker\images\calendar.gif" />
+    <Content Include="development-bundle\demos\datepicker\index.html" />
+    <Content Include="development-bundle\demos\datepicker\inline.html" />
+    <Content Include="development-bundle\demos\datepicker\localization.html" />
+    <Content Include="development-bundle\demos\datepicker\min-max.html" />
+    <Content Include="development-bundle\demos\datepicker\multiple-calendars.html" />
+    <Content Include="development-bundle\demos\datepicker\other-months.html" />
+    <Content Include="development-bundle\demos\datepicker\show-week.html" />
+    <Content Include="development-bundle\demos\demos.css" />
+    <Content Include="development-bundle\demos\dialog\animated.html" />
+    <Content Include="development-bundle\demos\dialog\default.html" />
+    <Content Include="development-bundle\demos\dialog\index.html" />
+    <Content Include="development-bundle\demos\dialog\modal-confirmation.html" />
+    <Content Include="development-bundle\demos\dialog\modal-form.html" />
+    <Content Include="development-bundle\demos\dialog\modal-message.html" />
+    <Content Include="development-bundle\demos\dialog\modal.html" />
+    <Content Include="development-bundle\demos\draggable\constrain-movement.html" />
+    <Content Include="development-bundle\demos\draggable\cursor-style.html" />
+    <Content Include="development-bundle\demos\draggable\default.html" />
+    <Content Include="development-bundle\demos\draggable\delay-start.html" />
+    <Content Include="development-bundle\demos\draggable\events.html" />
+    <Content Include="development-bundle\demos\draggable\handle.html" />
+    <Content Include="development-bundle\demos\draggable\index.html" />
+    <Content Include="development-bundle\demos\draggable\revert.html" />
+    <Content Include="development-bundle\demos\draggable\scroll.html" />
+    <Content Include="development-bundle\demos\draggable\snap-to.html" />
+    <Content Include="development-bundle\demos\draggable\sortable.html" />
+    <Content Include="development-bundle\demos\draggable\visual-feedback.html" />
+    <Content Include="development-bundle\demos\droppable\accepted-elements.html" />
+    <Content Include="development-bundle\demos\droppable\default.html" />
+    <Content Include="development-bundle\demos\droppable\images\high_tatras.jpg" />
+    <Content Include="development-bundle\demos\droppable\images\high_tatras2.jpg" />
+    <Content Include="development-bundle\demos\droppable\images\high_tatras2_min.jpg" />
+    <Content Include="development-bundle\demos\droppable\images\high_tatras3.jpg" />
+    <Content Include="development-bundle\demos\droppable\images\high_tatras3_min.jpg" />
+    <Content Include="development-bundle\demos\droppable\images\high_tatras4.jpg" />
+    <Content Include="development-bundle\demos\droppable\images\high_tatras4_min.jpg" />
+    <Content Include="development-bundle\demos\droppable\images\high_tatras_min.jpg" />
+    <Content Include="development-bundle\demos\droppable\index.html" />
+    <Content Include="development-bundle\demos\droppable\photo-manager.html" />
+    <Content Include="development-bundle\demos\droppable\propagation.html" />
+    <Content Include="development-bundle\demos\droppable\revert.html" />
+    <Content Include="development-bundle\demos\droppable\shopping-cart.html" />
+    <Content Include="development-bundle\demos\droppable\visual-feedback.html" />
+    <Content Include="development-bundle\demos\effect\default.html" />
+    <Content Include="development-bundle\demos\effect\easing.html" />
+    <Content Include="development-bundle\demos\effect\index.html" />
+    <Content Include="development-bundle\demos\hide\default.html" />
+    <Content Include="development-bundle\demos\hide\index.html" />
+    <Content Include="development-bundle\demos\images\calendar.gif" />
+    <Content Include="development-bundle\demos\images\demo-config-on-tile.gif" />
+    <Content Include="development-bundle\demos\images\demo-config-on.gif" />
+    <Content Include="development-bundle\demos\images\demo-spindown-closed.gif" />
+    <Content Include="development-bundle\demos\images\demo-spindown-open.gif" />
+    <Content Include="development-bundle\demos\images\icon-docs-info.gif" />
+    <Content Include="development-bundle\demos\images\pbar-ani.gif" />
+    <Content Include="development-bundle\demos\index.html" />
+    <Content Include="development-bundle\demos\position\cycler.html" />
+    <Content Include="development-bundle\demos\position\default.html" />
+    <Content Include="development-bundle\demos\position\images\earth.jpg" />
+    <Content Include="development-bundle\demos\position\images\flight.jpg" />
+    <Content Include="development-bundle\demos\position\images\rocket.jpg" />
+    <Content Include="development-bundle\demos\position\index.html" />
+    <Content Include="development-bundle\demos\progressbar\animated.html" />
+    <Content Include="development-bundle\demos\progressbar\default.html" />
+    <Content Include="development-bundle\demos\progressbar\images\pbar-ani.gif" />
+    <Content Include="development-bundle\demos\progressbar\index.html" />
+    <Content Include="development-bundle\demos\progressbar\resize.html" />
+    <Content Include="development-bundle\demos\removeClass\default.html" />
+    <Content Include="development-bundle\demos\removeClass\index.html" />
+    <Content Include="development-bundle\demos\resizable\animate.html" />
+    <Content Include="development-bundle\demos\resizable\aspect-ratio.html" />
+    <Content Include="development-bundle\demos\resizable\constrain-area.html" />
+    <Content Include="development-bundle\demos\resizable\default.html" />
+    <Content Include="development-bundle\demos\resizable\delay-start.html" />
+    <Content Include="development-bundle\demos\resizable\helper.html" />
+    <Content Include="development-bundle\demos\resizable\index.html" />
+    <Content Include="development-bundle\demos\resizable\max-min.html" />
+    <Content Include="development-bundle\demos\resizable\snap-to-grid.html" />
+    <Content Include="development-bundle\demos\resizable\synchronous-resize.html" />
+    <Content Include="development-bundle\demos\resizable\textarea.html" />
+    <Content Include="development-bundle\demos\resizable\visual-feedback.html" />
+    <Content Include="development-bundle\demos\selectable\default.html" />
+    <Content Include="development-bundle\demos\selectable\display-grid.html" />
+    <Content Include="development-bundle\demos\selectable\index.html" />
+    <Content Include="development-bundle\demos\selectable\serialize.html" />
+    <Content Include="development-bundle\demos\show\default.html" />
+    <Content Include="development-bundle\demos\show\index.html" />
+    <Content Include="development-bundle\demos\slider\colorpicker.html" />
+    <Content Include="development-bundle\demos\slider\default.html" />
+    <Content Include="development-bundle\demos\slider\hotelrooms.html" />
+    <Content Include="development-bundle\demos\slider\index.html" />
+    <Content Include="development-bundle\demos\slider\multiple-vertical.html" />
+    <Content Include="development-bundle\demos\slider\range-vertical.html" />
+    <Content Include="development-bundle\demos\slider\range.html" />
+    <Content Include="development-bundle\demos\slider\rangemax.html" />
+    <Content Include="development-bundle\demos\slider\rangemin.html" />
+    <Content Include="development-bundle\demos\slider\side-scroll.html" />
+    <Content Include="development-bundle\demos\slider\slider-vertical.html" />
+    <Content Include="development-bundle\demos\slider\steps.html" />
+    <Content Include="development-bundle\demos\slider\tabs.html" />
+    <Content Include="development-bundle\demos\sortable\connect-lists-through-tabs.html" />
+    <Content Include="development-bundle\demos\sortable\connect-lists.html" />
+    <Content Include="development-bundle\demos\sortable\default.html" />
+    <Content Include="development-bundle\demos\sortable\delay-start.html" />
+    <Content Include="development-bundle\demos\sortable\display-grid.html" />
+    <Content Include="development-bundle\demos\sortable\empty-lists.html" />
+    <Content Include="development-bundle\demos\sortable\index.html" />
+    <Content Include="development-bundle\demos\sortable\items.html" />
+    <Content Include="development-bundle\demos\sortable\placeholder.html" />
+    <Content Include="development-bundle\demos\sortable\portlets.html" />
+    <Content Include="development-bundle\demos\switchClass\default.html" />
+    <Content Include="development-bundle\demos\switchClass\index.html" />
+    <Content Include="development-bundle\demos\tabs\ajax.html" />
+    <Content Include="development-bundle\demos\tabs\ajax\content1.html" />
+    <Content Include="development-bundle\demos\tabs\ajax\content2.html" />
+    <Content Include="development-bundle\demos\tabs\bottom.html" />
+    <Content Include="development-bundle\demos\tabs\collapsible.html" />
+    <Content Include="development-bundle\demos\tabs\cookie.html" />
+    <Content Include="development-bundle\demos\tabs\default.html" />
+    <Content Include="development-bundle\demos\tabs\index.html" />
+    <Content Include="development-bundle\demos\tabs\manipulation.html" />
+    <Content Include="development-bundle\demos\tabs\mouseover.html" />
+    <Content Include="development-bundle\demos\tabs\sortable.html" />
+    <Content Include="development-bundle\demos\tabs\vertical.html" />
+    <Content Include="development-bundle\demos\toggleClass\default.html" />
+    <Content Include="development-bundle\demos\toggleClass\index.html" />
+    <Content Include="development-bundle\demos\toggle\default.html" />
+    <Content Include="development-bundle\demos\toggle\index.html" />
+    <Content Include="development-bundle\docs\accordion.html" />
+    <Content Include="development-bundle\docs\addClass.html" />
+    <Content Include="development-bundle\docs\animate.html" />
+    <Content Include="development-bundle\docs\autocomplete.html" />
+    <Content Include="development-bundle\docs\button.html" />
+    <Content Include="development-bundle\docs\datepicker.html" />
+    <Content Include="development-bundle\docs\dialog.html" />
+    <Content Include="development-bundle\docs\draggable.html" />
+    <Content Include="development-bundle\docs\droppable.html" />
+    <Content Include="development-bundle\docs\effect.html" />
+    <Content Include="development-bundle\docs\hide.html" />
+    <Content Include="development-bundle\docs\position.html" />
+    <Content Include="development-bundle\docs\progressbar.html" />
+    <Content Include="development-bundle\docs\removeClass.html" />
+    <Content Include="development-bundle\docs\resizable.html" />
+    <Content Include="development-bundle\docs\selectable.html" />
+    <Content Include="development-bundle\docs\show.html" />
+    <Content Include="development-bundle\docs\slider.html" />
+    <Content Include="development-bundle\docs\sortable.html" />
+    <Content Include="development-bundle\docs\switchClass.html" />
+    <Content Include="development-bundle\docs\tabs.html" />
+    <Content Include="development-bundle\docs\toggle.html" />
+    <Content Include="development-bundle\docs\toggleClass.html" />
+    <Content Include="development-bundle\external\jquery.bgiframe-2.1.2.js" />
+    <Content Include="development-bundle\external\jquery.cookie.js" />
+    <Content Include="development-bundle\external\jquery.metadata.js" />
+    <Content Include="development-bundle\external\qunit.css" />
+    <Content Include="development-bundle\external\qunit.js" />
+    <Content Include="development-bundle\GPL-LICENSE.txt" />
+    <Content Include="development-bundle\jquery-1.7.2.js" />
+    <Content Include="development-bundle\MIT-LICENSE.txt" />
+    <Content Include="development-bundle\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="development-bundle\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="development-bundle\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="development-bundle\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="development-bundle\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="development-bundle\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="development-bundle\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="development-bundle\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="development-bundle\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="development-bundle\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="development-bundle\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="development-bundle\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="development-bundle\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="development-bundle\themes\base\jquery.ui.accordion.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.all.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.base.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.button.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.core.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.dialog.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.resizable.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.selectable.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.slider.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.tabs.css" />
+    <Content Include="development-bundle\themes\base\jquery.ui.theme.css" />
+    <Content Include="development-bundle\ui\i18n\jquery-ui-i18n.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-af.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-ar-DZ.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-ar.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-az.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-bg.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-bs.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-ca.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-cs.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-cy-GB.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-da.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-de.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-el.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-en-AU.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-en-GB.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-en-NZ.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-eo.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-es.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-et.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-eu.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-fa.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-fi.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-fo.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-fr-CH.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-fr.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-ge.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-gl.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-he.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-hi.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-hr.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-hu.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-hy.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-id.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-is.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-it.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-ja.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-kk.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-km.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-ko.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-lb.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-lt.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-lv.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-mk.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-ml.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-ms.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-nl-BE.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-nl.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-no.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-pl.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-pt-BR.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-pt.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-rm.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-ro.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-ru.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-sk.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-sl.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-sq.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-sr-SR.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-sr.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-sv.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-ta.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-th.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-tj.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-tr.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-uk.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-vi.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-zh-CN.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-zh-HK.js" />
+    <Content Include="development-bundle\ui\i18n\jquery.ui.datepicker-zh-TW.js" />
+    <Content Include="development-bundle\ui\jquery-ui-1.8.20.custom.js" />
+    <Content Include="development-bundle\ui\jquery.effects.blind.js" />
+    <Content Include="development-bundle\ui\jquery.effects.bounce.js" />
+    <Content Include="development-bundle\ui\jquery.effects.clip.js" />
+    <Content Include="development-bundle\ui\jquery.effects.core.js" />
+    <Content Include="development-bundle\ui\jquery.effects.drop.js" />
+    <Content Include="development-bundle\ui\jquery.effects.explode.js" />
+    <Content Include="development-bundle\ui\jquery.effects.fade.js" />
+    <Content Include="development-bundle\ui\jquery.effects.fold.js" />
+    <Content Include="development-bundle\ui\jquery.effects.highlight.js" />
+    <Content Include="development-bundle\ui\jquery.effects.pulsate.js" />
+    <Content Include="development-bundle\ui\jquery.effects.scale.js" />
+    <Content Include="development-bundle\ui\jquery.effects.shake.js" />
+    <Content Include="development-bundle\ui\jquery.effects.slide.js" />
+    <Content Include="development-bundle\ui\jquery.effects.transfer.js" />
+    <Content Include="development-bundle\ui\jquery.ui.accordion.js" />
+    <Content Include="development-bundle\ui\jquery.ui.autocomplete.js" />
+    <Content Include="development-bundle\ui\jquery.ui.button.js" />
+    <Content Include="development-bundle\ui\jquery.ui.core.js" />
+    <Content Include="development-bundle\ui\jquery.ui.datepicker.js" />
+    <Content Include="development-bundle\ui\jquery.ui.dialog.js" />
+    <Content Include="development-bundle\ui\jquery.ui.draggable.js" />
+    <Content Include="development-bundle\ui\jquery.ui.droppable.js" />
+    <Content Include="development-bundle\ui\jquery.ui.mouse.js" />
+    <Content Include="development-bundle\ui\jquery.ui.position.js" />
+    <Content Include="development-bundle\ui\jquery.ui.progressbar.js" />
+    <Content Include="development-bundle\ui\jquery.ui.resizable.js" />
+    <Content Include="development-bundle\ui\jquery.ui.selectable.js" />
+    <Content Include="development-bundle\ui\jquery.ui.slider.js" />
+    <Content Include="development-bundle\ui\jquery.ui.sortable.js" />
+    <Content Include="development-bundle\ui\jquery.ui.tabs.js" />
+    <Content Include="development-bundle\ui\jquery.ui.widget.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.blind.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.bounce.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.clip.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.core.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.drop.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.explode.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.fade.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.fold.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.highlight.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.pulsate.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.scale.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.shake.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.slide.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.effects.transfer.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.accordion.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.autocomplete.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.button.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.core.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.datepicker.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.dialog.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.draggable.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.droppable.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.mouse.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.position.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.progressbar.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.resizable.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.selectable.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.slider.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.sortable.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.tabs.min.js" />
+    <Content Include="development-bundle\ui\minified\jquery.ui.widget.min.js" />
+    <Content Include="Div__Play.aspx" />
+    <Content Include="edit-onNG_Tool_Demo.aspx" />
+    <Content Include="EventBubblingDemo.aspx" />
+    <Content Include="EventBubblingDemo_1.aspx" />
+    <Content Include="Expression_Builders_Demo.aspx" />
+    <Content Include="Extension__Methods.aspx" />
+    <Content Include="FirebugDemo.aspx" />
+    <Content Include="FlipTextSample.aspx" />
+    <Content Include="garfield.jpg" />
+    <Content Include="GenericList_Demo.aspx" />
+    <Content Include="grids_Badge_ruler.html" />
+    <Content Include="grids_badge.html" />
+    <Content Include="d.xml" />
+    <Content Include="Default.aspx" />
+    <Content Include="dictionary.css" />
+    <Content Include="ErrorPage.aspx" />
+    <Content Include="flatland.css" />
+    <Content Include="GenericListDemo.aspx" />
+    <Content Include="gettysburg.css" />
+    <Content Include="gettysburg.js" />
+    <Content Include="grid-lines.gif" />
+    <Content Include="grids.html" />
+    <Content Include="guest.css" />
+    <Content Include="helpicon.aspx" />
+    <Content Include="horizontal-ruler.gif" />
+    <Content Include="HoverDemo.aspx" />
+    <Content Include="HTML5__Demo.aspx" />
+    <Content Include="HTMLPage1.htm" />
+    <Content Include="HtmlPage1.html" />
+    <Content Include="HTMLPage2.htm" />
+    <Content Include="HTMLPage3.htm" />
+    <Content Include="HTMLPage4.htm" />
+    <Content Include="IE6IE7Test.aspx" />
+    <Content Include="IE_Select_Focus.aspx" />
+    <Content Include="iFrameTest.aspx" />
+    <Content Include="ImageResizer.aspx" />
+    <Content Include="index.html" />
+    <Content Include="iPicture_JQPlugin\css\jQuery.iPicture.css" />
+    <Content Include="iPicture_JQPlugin\css\ui-lightness\images\ui-bg_diagonals-thick_18_b81900_40x40.png" />
+    <Content Include="iPicture_JQPlugin\css\ui-lightness\images\ui-bg_diagonals-thick_20_666666_40x40.png" />
+    <Content Include="iPicture_JQPlugin\css\ui-lightness\images\ui-bg_flat_10_000000_40x100.png" />
+    <Content Include="iPicture_JQPlugin\css\ui-lightness\images\ui-bg_glass_100_f6f6f6_1x400.png" />
+    <Content Include="iPicture_JQPlugin\css\ui-lightness\images\ui-bg_glass_100_fdf5ce_1x400.png" />
+    <Content Include="iPicture_JQPlugin\css\ui-lightness\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="iPicture_JQPlugin\css\ui-lightness\images\ui-bg_gloss-wave_35_f6a828_500x100.png" />
+    <Content Include="iPicture_JQPlugin\css\ui-lightness\images\ui-bg_highlight-soft_100_eeeeee_1x100.png" />
+    <Content Include="iPicture_JQPlugin\css\ui-lightness\images\ui-bg_highlight-soft_75_ffe45c_1x100.png" />
+    <Content Include="iPicture_JQPlugin\css\ui-lightness\images\ui-icons_222222_256x240.png" />
+    <Content Include="iPicture_JQPlugin\css\ui-lightness\images\ui-icons_228ef1_256x240.png" />
+    <Content Include="iPicture_JQPlugin\css\ui-lightness\images\ui-icons_ef8c08_256x240.png" />
+    <Content Include="iPicture_JQPlugin\css\ui-lightness\images\ui-icons_ffd27a_256x240.png" />
+    <Content Include="iPicture_JQPlugin\css\ui-lightness\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="iPicture_JQPlugin\css\ui-lightness\jquery-ui-1.8.16.custom.css" />
+    <Content Include="iPicture_JQPlugin\images\beadblack\button.png" />
+    <Content Include="iPicture_JQPlugin\images\beadblue\button.png" />
+    <Content Include="iPicture_JQPlugin\images\beaddarkblue\button.png" />
+    <Content Include="iPicture_JQPlugin\images\beadfucsia\button.png" />
+    <Content Include="iPicture_JQPlugin\images\beadgold\button.png" />
+    <Content Include="iPicture_JQPlugin\images\beadgreen\button.png" />
+    <Content Include="iPicture_JQPlugin\images\beadgrey\button.png" />
+    <Content Include="iPicture_JQPlugin\images\beadlightblue2\button.png" />
+    <Content Include="iPicture_JQPlugin\images\beadlightblue\button.png" />
+    <Content Include="iPicture_JQPlugin\images\beadlightgreen\button.png" />
+    <Content Include="iPicture_JQPlugin\images\beadlightviolet\button.png" />
+    <Content Include="iPicture_JQPlugin\images\beadorange\button.png" />
+    <Content Include="iPicture_JQPlugin\images\beadpurple\button.png" />
+    <Content Include="iPicture_JQPlugin\images\beadred\button.png" />
+    <Content Include="iPicture_JQPlugin\images\beadviolet\button.png" />
+    <Content Include="iPicture_JQPlugin\images\beadwatergreen\button.png" />
+    <Content Include="iPicture_JQPlugin\images\beadyellow\button.png" />
+    <Content Include="iPicture_JQPlugin\images\bedroom.jpg" />
+    <Content Include="iPicture_JQPlugin\images\bg-white.png" />
+    <Content Include="iPicture_JQPlugin\images\bg.png" />
+    <Content Include="iPicture_JQPlugin\images\choosebutton.png" />
+    <Content Include="iPicture_JQPlugin\images\christmas.jpg" />
+    <Content Include="iPicture_JQPlugin\images\color_swatch.png" />
+    <Content Include="iPicture_JQPlugin\images\cross.png" />
+    <Content Include="iPicture_JQPlugin\images\kitchen.jpg" />
+    <Content Include="iPicture_JQPlugin\images\kitchen2.jpg" />
+    <Content Include="iPicture_JQPlugin\images\kitchen3.jpg" />
+    <Content Include="iPicture_JQPlugin\images\left-gold.png" />
+    <Content Include="iPicture_JQPlugin\images\moreblack\button.png" />
+    <Content Include="iPicture_JQPlugin\images\moreblue\button.png" />
+    <Content Include="iPicture_JQPlugin\images\moredarkblue\button.png" />
+    <Content Include="iPicture_JQPlugin\images\morefucsia\button.png" />
+    <Content Include="iPicture_JQPlugin\images\moregold\button.png" />
+    <Content Include="iPicture_JQPlugin\images\moregreen\button.png" />
+    <Content Include="iPicture_JQPlugin\images\moregrey\button.png" />
+    <Content Include="iPicture_JQPlugin\images\morelightblue2\button.png" />
+    <Content Include="iPicture_JQPlugin\images\morelightblue\button.png" />
+    <Content Include="iPicture_JQPlugin\images\morelightgreen\button.png" />
+    <Content Include="iPicture_JQPlugin\images\morelightviolet\button.png" />
+    <Content Include="iPicture_JQPlugin\images\moreorange\button.png" />
+    <Content Include="iPicture_JQPlugin\images\morepurple\button.png" />
+    <Content Include="iPicture_JQPlugin\images\morered\button.png" />
+    <Content Include="iPicture_JQPlugin\images\moreviolet\button.png" />
+    <Content Include="iPicture_JQPlugin\images\morewatergreen\button.png" />
+    <Content Include="iPicture_JQPlugin\images\moreyellow\button.png" />
+    <Content Include="iPicture_JQPlugin\images\right-gold.png" />
+    <Content Include="iPicture_JQPlugin\index.html" />
+    <Content Include="jq-proxy.aspx" />
+    <Content Include="jquery-1.8.3.js" />
+    <Content Include="jquery-1.7.2.min.js" />
+    <Content Include="jquery-animate-css-rotate-scale.js" />
+    <Content Include="jquery-css-transform.js" />
+    <Content Include="jquery-ui-1.8.21.custom.min.js" />
+    <Content Include="jquery.corner.js" />
+    <Content Include="jQuery.iPicture.js" />
+    <Content Include="iPicture_JQPlugin\slideshow.html" />
+    <Content Include="jquery-1.3.2-vsdoc2.js" />
+    <Content Include="jquery-1.7.1.min.js" />
+    <Content Include="jquery.mb.flipText.js" />
+    <Content Include="Jquery_Clone_Demo.aspx" />
+    <Content Include="jq_customEvents.aspx" />
+    <Content Include="JQ_getScriptDemo.aspx" />
+    <Content Include="JQ_IterationTypes.aspx" />
+    <Content Include="JQ_ParseJson__Demo.aspx" />
+    <Content Include="jq_proxy.aspx" />
+    <Content Include="jq_utility.aspx" />
+    <Content Include="JSClass.js" />
+    <Content Include="JSClassDemo.aspx" />
+    <Content Include="JSCoordinateSample.aspx" />
+    <Content Include="JS_AJAX.aspx" />
+    <Content Include="JS_AJAX_Analysis.aspx" />
+    <Content Include="Js_AJAX_Infinite_Data_Pattern.aspx" />
+    <Content Include="JS_Design\Constructor-Pattern.aspx" />
+    <Content Include="JS_Design\Revealing_Pattern.aspx" />
+    <Content Include="JS_UpdatePanel_Persistence.aspx" />
+    <Content Include="KeyPress.aspx" />
+    <Content Include="Knockout\demo1.aspx" />
+    <Content Include="Knockout\demo2.aspx" />
+    <Content Include="lib\bin\eong.jar" />
+    <Content Include="lib\bin\optional\barcode.jar" />
+    <Content Include="lib\bin\optional\hyph.jar" />
+    <Content Include="lib\bin\optional\mathml.jar" />
+    <Content Include="lib\bin\optional\svg.jar" />
+    <Content Include="lib\bin\preload.jar" />
+    <Content Include="lib\bin\splashscreen.gif" />
+    <Content Include="lib\config\contextActions.css" />
+    <Content Include="lib\config\crossReferences.css" />
+    <Content Include="lib\config\inplaceToolbarActions.css" />
+    <Content Include="lib\config\structureTemplates\letterFooter.html" />
+    <Content Include="lib\config\structureTemplates\letterHeader.html" />
+    <Content Include="lib\config\structureTemplates\signature.html" />
+    <Content Include="lib\css\dialog.css" />
+    <Content Include="lib\css\dropdown.css" />
+    <Content Include="lib\css\edit-on-ng.css" />
+    <Content Include="lib\css\jquery-ui\images\colorpicker\colorpicker_overlay.png" />
+    <Content Include="lib\css\jquery-ui\images\colorpicker\colorpicker_select.gif" />
+    <Content Include="lib\css\jquery-ui\images\colorpicker\custom_background.png" />
+    <Content Include="lib\css\jquery-ui\images\colorpicker\custom_hex.png" />
+    <Content Include="lib\css\jquery-ui\images\colorpicker\custom_hsb_b.png" />
+    <Content Include="lib\css\jquery-ui\images\colorpicker\custom_hsb_h.png" />
+    <Content Include="lib\css\jquery-ui\images\colorpicker\custom_hsb_s.png" />
+    <Content Include="lib\css\jquery-ui\images\colorpicker\custom_indic.gif" />
+    <Content Include="lib\css\jquery-ui\images\colorpicker\custom_rgb_b.png" />
+    <Content Include="lib\css\jquery-ui\images\colorpicker\custom_rgb_g.png" />
+    <Content Include="lib\css\jquery-ui\images\colorpicker\custom_rgb_r.png" />
+    <Content Include="lib\css\jquery-ui\images\colorpicker\custom_submit.png" />
+    <Content Include="lib\css\jquery-ui\images\colorpicker\select2.png" />
+    <Content Include="lib\css\jquery-ui\images\colorpicker\slider.png" />
+    <Content Include="lib\css\jquery-ui\images\file.gif" />
+    <Content Include="lib\css\jquery-ui\images\folder-closed.gif" />
+    <Content Include="lib\css\jquery-ui\images\folder.gif" />
+    <Content Include="lib\css\jquery-ui\images\minus.gif" />
+    <Content Include="lib\css\jquery-ui\images\plus.gif" />
+    <Content Include="lib\css\jquery-ui\images\treeview-black-line.gif" />
+    <Content Include="lib\css\jquery-ui\images\treeview-black.gif" />
+    <Content Include="lib\css\jquery-ui\images\treeview-default-line.gif" />
+    <Content Include="lib\css\jquery-ui\images\treeview-default.gif" />
+    <Content Include="lib\css\jquery-ui\images\treeview-famfamfam-line.gif" />
+    <Content Include="lib\css\jquery-ui\images\treeview-famfamfam.gif" />
+    <Content Include="lib\css\jquery-ui\images\treeview-gray-line.gif" />
+    <Content Include="lib\css\jquery-ui\images\treeview-gray.gif" />
+    <Content Include="lib\css\jquery-ui\images\treeview-red-line.gif" />
+    <Content Include="lib\css\jquery-ui\images\treeview-red.gif" />
+    <Content Include="lib\css\jquery-ui\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="lib\css\jquery-ui\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="lib\css\jquery-ui\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="lib\css\jquery-ui\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="lib\css\jquery-ui\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="lib\css\jquery-ui\images\ui-bg_highlight-hard_75_cccccc_1x100.png" />
+    <Content Include="lib\css\jquery-ui\images\ui-bg_highlight-hard_75_ebeaea_1x100.png" />
+    <Content Include="lib\css\jquery-ui\images\ui-bg_inset-soft_95_fef1ec_1x100.png" />
+    <Content Include="lib\css\jquery-ui\images\ui-icons_222222_256x240.png" />
+    <Content Include="lib\css\jquery-ui\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="lib\css\jquery-ui\images\ui-icons_454545_256x240.png" />
+    <Content Include="lib\css\jquery-ui\images\ui-icons_888888_256x240.png" />
+    <Content Include="lib\css\jquery-ui\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="lib\css\jquery-ui\jquery.extra.css" />
+    <Content Include="lib\css\jquery-ui\jquery.layout.css" />
+    <Content Include="lib\css\jquery-ui\jquery.override.css" />
+    <Content Include="lib\css\jquery-ui\jquery.treeview.css" />
+    <Content Include="lib\css\jquery-ui\jquery.ui.css" />
+    <Content Include="lib\css\statusbar.css" />
+    <Content Include="lib\css\styletemplatepanel.css" />
+    <Content Include="lib\css\toolbar.css" />
+    <Content Include="lib\dialog\backgroundColor.html" />
+    <Content Include="lib\dialog\cellProperties.html" />
+    <Content Include="lib\dialog\changeCase.html" />
+    <Content Include="lib\dialog\changeLanguage.html" />
+    <Content Include="lib\dialog\columnProperties.html" />
+    <Content Include="lib\dialog\documentStatistics.html" />
+    <Content Include="lib\dialog\editAnnotation.html" />
+    <Content Include="lib\dialog\editCrossreference.html" />
+    <Content Include="lib\dialog\generalColor.html" />
+    <Content Include="lib\dialog\hrProperties.html" />
+    <Content Include="lib\dialog\imageProperties.html" />
+    <Content Include="lib\dialog\insertAnnotation.html" />
+    <Content Include="lib\dialog\insertBookmark.html" />
+    <Content Include="lib\dialog\insertCrossreference.html" />
+    <Content Include="lib\dialog\insertHyperlink.html" />
+    <Content Include="lib\dialog\insertImage.html" />
+    <Content Include="lib\dialog\insertObject.html" />
+    <Content Include="lib\dialog\insertSpecialChar.html" />
+    <Content Include="lib\dialog\insertStructureTemplate.html" />
+    <Content Include="lib\dialog\insertTable.html" />
+    <Content Include="lib\dialog\linkProperties.html" />
+    <Content Include="lib\dialog\loadURL.html" />
+    <Content Include="lib\dialog\objectProperties.html" />
+    <Content Include="lib\dialog\pageProperties.html" />
+    <Content Include="lib\dialog\rowProperties.html" />
+    <Content Include="lib\dialog\splitCell.html" />
+    <Content Include="lib\dialog\statusbar.html" />
+    <Content Include="lib\dialog\tableProperties.html" />
+    <Content Include="lib\dialog\textColor.html" />
+    <Content Include="lib\icons\abbr.png" />
+    <Content Include="lib\icons\acronym.png" />
+    <Content Include="lib\icons\align-center.png" />
+    <Content Include="lib\icons\align-justify.png" />
+    <Content Include="lib\icons\align-left.png" />
+    <Content Include="lib\icons\align-right.png" />
+    <Content Include="lib\icons\auto-correct-dialog.png" />
+    <Content Include="lib\icons\auto-fit-table-content.png" />
+    <Content Include="lib\icons\backgroundcolor-dialog.png" />
+    <Content Include="lib\icons\blockquote.png" />
+    <Content Include="lib\icons\bold.png" />
+    <Content Include="lib\icons\cell-properties-dialog.png" />
+    <Content Include="lib\icons\change-case-dialog.png" />
+    <Content Include="lib\icons\change-language-dialog.png" />
+    <Content Include="lib\icons\cite.png" />
+    <Content Include="lib\icons\clear-formatting.png" />
+    <Content Include="lib\icons\close.png" />
+    <Content Include="lib\icons\code.png" />
+    <Content Include="lib\icons\color-dialog.png" />
+    <Content Include="lib\icons\column-properties-dialog.png" />
+    <Content Include="lib\icons\convert-table.png" />
+    <Content Include="lib\icons\copy.png" />
+    <Content Include="lib\icons\cut.png" />
+    <Content Include="lib\icons\decrease-font-size.png" />
+    <Content Include="lib\icons\decrease-indent.png" />
+    <Content Include="lib\icons\decrease-list-level.png" />
+    <Content Include="lib\icons\decrease-text-size.png" />
+    <Content Include="lib\icons\decrease-zoom-small.png" />
+    <Content Include="lib\icons\decrease-zoom.png" />
+    <Content Include="lib\icons\delete-column.png" />
+    <Content Include="lib\icons\delete-container.png" />
+    <Content Include="lib\icons\delete-row.png" />
+    <Content Include="lib\icons\delete-table.png" />
+    <Content Include="lib\icons\dfn.png" />
+    <Content Include="lib\icons\discunorderedlist.png" />
+    <Content Include="lib\icons\document-statistics-dialog.png" />
+    <Content Include="lib\icons\edit-annotation-dialog.png" />
+    <Content Include="lib\icons\edit-crossreference-dialog.png" />
+    <Content Include="lib\icons\em.png" />
+    <Content Include="lib\icons\find-next.png" />
+    <Content Include="lib\icons\find-prev.png" />
+    <Content Include="lib\icons\find-replace-dialog.png" />
+    <Content Include="lib\icons\heading1.png" />
+    <Content Include="lib\icons\heading2.png" />
+    <Content Include="lib\icons\heading3.png" />
+    <Content Include="lib\icons\heading4.png" />
+    <Content Include="lib\icons\help.png" />
+    <Content Include="lib\icons\in-place-toolbar-icons.jar" />
+    <Content Include="lib\icons\increase-font-size.png" />
+    <Content Include="lib\icons\increase-indent.png" />
+    <Content Include="lib\icons\increase-list-level.png" />
+    <Content Include="lib\icons\increase-text-size.png" />
+    <Content Include="lib\icons\increase-zoom-small.png" />
+    <Content Include="lib\icons\increase-zoom.png" />
+    <Content Include="lib\icons\information-dialog-small.png" />
+    <Content Include="lib\icons\information-dialog.png" />
+    <Content Include="lib\icons\inlinequote.png" />
+    <Content Include="lib\icons\insert-annotation-dialog.png" />
+    <Content Include="lib\icons\insert-bookmark-dialog.png" />
+    <Content Include="lib\icons\insert-column-after.png" />
+    <Content Include="lib\icons\insert-column-before.png" />
+    <Content Include="lib\icons\insert-container.png" />
+    <Content Include="lib\icons\insert-crossreference-dialog.png" />
+    <Content Include="lib\icons\insert-date.png" />
+    <Content Include="lib\icons\insert-horizontal-line.png" />
+    <Content Include="lib\icons\insert-hyperlink-dialog.png" />
+    <Content Include="lib\icons\insert-image-dialog.png" />
+    <Content Include="lib\icons\insert-line-break.png" />
+    <Content Include="lib\icons\insert-object-dialog.png" />
+    <Content Include="lib\icons\insert-page-break.png" />
+    <Content Include="lib\icons\insert-row-after.png" />
+    <Content Include="lib\icons\insert-row-before.png" />
+    <Content Include="lib\icons\insert-special-character-dialog.png" />
+    <Content Include="lib\icons\insert-structure-template-dialog.png" />
+    <Content Include="lib\icons\insert-table-dialog.png" />
+    <Content Include="lib\icons\italic.png" />
+    <Content Include="lib\icons\kbd.png" />
+    <Content Include="lib\icons\list-ordered.png" />
+    <Content Include="lib\icons\list-unordered.png" />
+    <Content Include="lib\icons\load-document-dialog-small.png" />
+    <Content Include="lib\icons\load-document-dialog.png" />
+    <Content Include="lib\icons\load-repository-document.png" />
+    <Content Include="lib\icons\load-url-dialog-small.png" />
+    <Content Include="lib\icons\load-url-dialog.png" />
+    <Content Include="lib\icons\loweralphaorderedlist.png" />
+    <Content Include="lib\icons\lowerromanorderedlist.png" />
+    <Content Include="lib\icons\merge-cells.png" />
+    <Content Include="lib\icons\merge-container.png" />
+    <Content Include="lib\icons\merge-table.png" />
+    <Content Include="lib\icons\new-document-small.png" />
+    <Content Include="lib\icons\new-document.png" />
+    <Content Include="lib\icons\page-mode-continuous.png" />
+    <Content Include="lib\icons\page-mode-double-sided.png" />
+    <Content Include="lib\icons\page-mode-single-sided.png" />
+    <Content Include="lib\icons\page-properties-dialog.png" />
+    <Content Include="lib\icons\paragraph.png" />
+    <Content Include="lib\icons\paste-plain.png" />
+    <Content Include="lib\icons\paste-special-dialog.png" />
+    <Content Include="lib\icons\paste.png" />
+    <Content Include="lib\icons\print.png" />
+    <Content Include="lib\icons\q.png" />
+    <Content Include="lib\icons\redo-small.png" />
+    <Content Include="lib\icons\redo.png" />
+    <Content Include="lib\icons\remove-annotation.png" />
+    <Content Include="lib\icons\row-properties-dialog.png" />
+    <Content Include="lib\icons\samp.png" />
+    <Content Include="lib\icons\save-document-as-dialog-small.png" />
+    <Content Include="lib\icons\save-document-as-dialog.png" />
+    <Content Include="lib\icons\save-document-small.png" />
+    <Content Include="lib\icons\save-document.png" />
+    <Content Include="lib\icons\script-sub.png" />
+    <Content Include="lib\icons\script-super.png" />
+    <Content Include="lib\icons\select-all.png" />
+    <Content Include="lib\icons\select-container.png" />
+    <Content Include="lib\icons\show-annotations-bubbles.png" />
+    <Content Include="lib\icons\show-annotations-inline.png" />
+    <Content Include="lib\icons\show-in-browser.png" />
+    <Content Include="lib\icons\show-wysiwyg-view.png" />
+    <Content Include="lib\icons\spellcheck-dialog.png" />
+    <Content Include="lib\icons\split-cell-dialog.png" />
+    <Content Include="lib\icons\split-container.png" />
+    <Content Include="lib\icons\split-table.png" />
+    <Content Include="lib\icons\squareunorderedlist.png" />
+    <Content Include="lib\icons\strikethrough.png" />
+    <Content Include="lib\icons\strong.png" />
+    <Content Include="lib\icons\style-templates-status-bar.png" />
+    <Content Include="lib\icons\style-templates.png" />
+    <Content Include="lib\icons\table-properties-dialog.png" />
+    <Content Include="lib\icons\text-size-large.png" />
+    <Content Include="lib\icons\text-size-normal.png" />
+    <Content Include="lib\icons\text-size-small.png" />
+    <Content Include="lib\icons\thesaurus-dialog.png" />
+    <Content Include="lib\icons\toggle-auto-spellcheck.png" />
+    <Content Include="lib\icons\toggle-header-cell.png" />
+    <Content Include="lib\icons\toggle-show-container-grid.png" />
+    <Content Include="lib\icons\toggle-show-marks.png" />
+    <Content Include="lib\icons\toggle-show-semantic-elements.png" />
+    <Content Include="lib\icons\toggle-show-table-grid.png" />
+    <Content Include="lib\icons\toggle-source-view-status-bar.png" />
+    <Content Include="lib\icons\toggle-source-view.png" />
+    <Content Include="lib\icons\underline.png" />
+    <Content Include="lib\icons\undo-small.png" />
+    <Content Include="lib\icons\undo.png" />
+    <Content Include="lib\icons\upload-document-all.png" />
+    <Content Include="lib\icons\upload-document.png" />
+    <Content Include="lib\icons\upload-image.png" />
+    <Content Include="lib\icons\upload-object.png" />
+    <Content Include="lib\icons\upperalphaorderedlist.png" />
+    <Content Include="lib\icons\upperromanorderedlist.png" />
+    <Content Include="lib\icons\var.png" />
+    <Content Include="lib\icons\zoom-100.png" />
+    <Content Include="lib\icu4j\icu4j.jar" />
+    <Content Include="lib\js\edit-on-ng.js" />
+    <Content Include="lib\js\jquery\eong-plugins.js" />
+    <Content Include="lib\js\jquery\jquery-1.4.min.js" />
+    <Content Include="lib\js\jquery\jquery-ui.min.js" />
+    <Content Include="lib\js\jquery\jquery.layout.min.js" />
+    <Content Include="lib\js\jquery\ui.menu.js" />
+    <Content Include="logo1.JPG" />
+    <Content Include="logo2.JPG" />
+    <Content Include="logo3.JPG" />
+    <Content Include="logo4.JPG" />
+    <Content Include="logo5.JPG" />
+    <Content Include="Mask_CC.aspx" />
+    <Content Include="NeoDynamicImageResize.aspx" />
+    <Content Include="notepad_app.aspx" />
+    <Content Include="one.jpg" />
+    <Content Include="oneTN.jpg" />
+    <Content Include="OO__JS__Demo.aspx" />
+    <Content Include="OutputCachingDemo.aspx" />
+    <Content Include="PartialClassDemo.aspx" />
+    <Content Include="PlayWithHTMLEncode.aspx" />
+    <Content Include="pq-bottom.jpg" />
+    <Content Include="pq-top.jpg" />
+    <Content Include="PreloadingImages.aspx" />
+    <Content Include="ProjectDrawDemo.aspx" />
+    <Content Include="Protected_test.aspx" />
+    <Content Include="Prototype-Design.aspx" />
+    <Content Include="red_official_lores.gif" />
+    <Content Include="RegisterArrayDeclaration_Demo.aspx" />
+    <Content Include="Ruler_Demo\grids-v2-Badge.html" />
+    <Content Include="Ruler_Demo\grids-v2.html" />
+    <Content Include="Ruler_Demo\horiz-ruler.jpg" />
+    <Content Include="Ruler_Demo\pt-grid.jpg" />
+    <Content Include="Ruler_Demo\vert-ruler.jpg" />
+    <Content Include="DesignPattern.aspx" />
+    <Content Include="Sample.aspx" />
+    <Content Include="site.css" />
+    <Content Include="Spinner.aspx" />
+    <Content Include="StarBucks\Decorator_Pattern.aspx" />
+    <Content Include="Survey_Research.aspx" />
+    <Content Include="Survey_SingleChoiceHoriz_Question.htm" />
+    <Content Include="TableDemo.aspx" />
+    <Content Include="TextFile1.txt" />
+    <Content Include="three.jpg" />
+    <Content Include="threeTN.jpg" />
+    <Content Include="Timer.aspx" />
+    <Content Include="TimerJSBased.aspx" />
+    <Content Include="Tutsplus\Day3.aspx" />
+    <Content Include="two.jpg" />
+    <Content Include="twoTN.jpg" />
+    <Content Include="underscore-min.js" />
+    <Content Include="underscore_script_demo.js" />
+    <Content Include="Underscore__Demo.aspx" />
+    <Content Include="UP_AsyncPostback.aspx" />
+    <Content Include="URLEncode_Demo.aspx" />
+    <Content Include="ValignTest.aspx" />
+    <Content Include="vertical-ruler.gif" />
+    <Content Include="ViewStateContainer.aspx" />
+    <Content Include="ViewStatePage1.aspx" />
+    <Content Include="ViewStatePage2.aspx" />
+    <Content Include="Web.config" />
+    <Content Include="InTheWoods.aspx" />
+    <Content Include="WebForm1.aspx" />
+    <Content Include="JSReplaceDemo.aspx" />
+    <Content Include="WebService1.asmx" />
+    <Content Include="XMLFile1.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="XMLFile2.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Yield_Demo.aspx" />
+    <Content Include="zero.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="5392_Redesign.aspx.cs">
+      <DependentUpon>5392_Redesign.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5392_Redesign.aspx.designer.cs">
+      <DependentUpon>5392_Redesign.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="5392_Redesign_II.aspx.cs">
+      <DependentUpon>5392_Redesign_II.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="5392_Redesign_II.aspx.designer.cs">
+      <DependentUpon>5392_Redesign_II.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AccessViewState.aspx.cs">
+      <DependentUpon>AccessViewState.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AccessViewState.aspx.designer.cs">
+      <DependentUpon>AccessViewState.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdvFilterDemo_FF.aspx.cs">
+      <DependentUpon>AdvFilterDemo_FF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdvFilterDemo_FF.aspx.designer.cs">
+      <DependentUpon>AdvFilterDemo_FF.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AdvFilter_IE.aspx.cs">
+      <DependentUpon>AdvFilter_IE.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AdvFilter_IE.aspx.designer.cs">
+      <DependentUpon>AdvFilter_IE.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AjaxErrorTest.aspx.cs">
+      <DependentUpon>AjaxErrorTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AjaxErrorTest.aspx.designer.cs">
+      <DependentUpon>AjaxErrorTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AJAX_TIMER_Demo.aspx.cs">
+      <DependentUpon>AJAX_TIMER_Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AJAX_TIMER_Demo.aspx.designer.cs">
+      <DependentUpon>AJAX_TIMER_Demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AlignmentTest.aspx.cs">
+      <DependentUpon>AlignmentTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AlignmentTest.aspx.designer.cs">
+      <DependentUpon>AlignmentTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AngularJS\FirstDemo.aspx.cs">
+      <DependentUpon>FirstDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AngularJS\FirstDemo.aspx.designer.cs">
+      <DependentUpon>FirstDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="autocomplete_test.aspx.cs">
+      <DependentUpon>autocomplete_test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="autocomplete_test.aspx.designer.cs">
+      <DependentUpon>autocomplete_test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Avery5392.aspx.cs">
+      <DependentUpon>Avery5392.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Avery5392.aspx.designer.cs">
+      <DependentUpon>Avery5392.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Avery_new.aspx.cs">
+      <DependentUpon>Avery_new.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Avery_new.aspx.designer.cs">
+      <DependentUpon>Avery_new.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Badge.aspx.cs">
+      <DependentUpon>Badge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Badge.aspx.designer.cs">
+      <DependentUpon>Badge.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BadgePrintingPosition.aspx.cs">
+      <DependentUpon>BadgePrintingPosition.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BadgePrintingPosition.aspx.designer.cs">
+      <DependentUpon>BadgePrintingPosition.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="BrowserCloseMethodCall.aspx.cs">
+      <DependentUpon>BrowserCloseMethodCall.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BrowserCloseMethodCall.aspx.designer.cs">
+      <DependentUpon>BrowserCloseMethodCall.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CallWCFService.aspx.cs">
+      <DependentUpon>CallWCFService.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CallWCFService.aspx.designer.cs">
+      <DependentUpon>CallWCFService.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="CanvasDemo.aspx.cs">
+      <DependentUpon>CanvasDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="CanvasDemo.aspx.designer.cs">
+      <DependentUpon>CanvasDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter3.aspx.cs">
+      <DependentUpon>Chapter3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chapter3.aspx.designer.cs">
+      <DependentUpon>Chapter3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter4.aspx.cs">
+      <DependentUpon>Chapter4.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chapter4.aspx.designer.cs">
+      <DependentUpon>Chapter4.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter5.aspx.cs">
+      <DependentUpon>Chapter5.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chapter5.aspx.designer.cs">
+      <DependentUpon>Chapter5.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Chapter6.aspx.cs">
+      <DependentUpon>Chapter6.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Chapter6.aspx.designer.cs">
+      <DependentUpon>Chapter6.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="contact_info.aspx.cs">
+      <DependentUpon>contact_info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="contact_info.aspx.designer.cs">
+      <DependentUpon>contact_info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Data-Tag-Tuning.aspx.cs">
+      <DependentUpon>Data-Tag-Tuning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Data-Tag-Tuning.aspx.designer.cs">
+      <DependentUpon>Data-Tag-Tuning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataBinding_Demo.aspx.cs">
+      <DependentUpon>DataBinding_Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataBinding_Demo.aspx.designer.cs">
+      <DependentUpon>DataBinding_Demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DataSet2.cs">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <SubType>ASPXCodeBehind</SubType>
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DemoFormatMask.aspx.cs">
+      <DependentUpon>DemoFormatMask.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DemoFormatMask.aspx.designer.cs">
+      <DependentUpon>DemoFormatMask.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Div__Play.aspx.cs">
+      <DependentUpon>Div__Play.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Div__Play.aspx.designer.cs">
+      <DependentUpon>Div__Play.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="edit-onNG_Tool_Demo.aspx.cs">
+      <DependentUpon>edit-onNG_Tool_Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="edit-onNG_Tool_Demo.aspx.designer.cs">
+      <DependentUpon>edit-onNG_Tool_Demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ErrorPage.aspx.designer.cs">
+      <DependentUpon>ErrorPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventBubblingDemo.aspx.cs">
+      <DependentUpon>EventBubblingDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventBubblingDemo.aspx.designer.cs">
+      <DependentUpon>EventBubblingDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="EventBubblingDemo_1.aspx.cs">
+      <DependentUpon>EventBubblingDemo_1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="EventBubblingDemo_1.aspx.designer.cs">
+      <DependentUpon>EventBubblingDemo_1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Expression_Builders_Demo.aspx.cs">
+      <DependentUpon>Expression_Builders_Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Expression_Builders_Demo.aspx.designer.cs">
+      <DependentUpon>Expression_Builders_Demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Extension__Methods.aspx.cs">
+      <DependentUpon>Extension__Methods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Extension__Methods.aspx.designer.cs">
+      <DependentUpon>Extension__Methods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FirebugDemo.aspx.cs">
+      <DependentUpon>FirebugDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FirebugDemo.aspx.designer.cs">
+      <DependentUpon>FirebugDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="FlipTextSample.aspx.cs">
+      <DependentUpon>FlipTextSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="FlipTextSample.aspx.designer.cs">
+      <DependentUpon>FlipTextSample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GenericListDemo.aspx.cs">
+      <DependentUpon>GenericListDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GenericListDemo.aspx.designer.cs">
+      <DependentUpon>GenericListDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="GenericList_Demo.aspx.cs">
+      <DependentUpon>GenericList_Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="GenericList_Demo.aspx.designer.cs">
+      <DependentUpon>GenericList_Demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="helpicon.aspx.cs">
+      <DependentUpon>helpicon.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="helpicon.aspx.designer.cs">
+      <DependentUpon>helpicon.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HoverDemo.aspx.cs">
+      <DependentUpon>HoverDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HoverDemo.aspx.designer.cs">
+      <DependentUpon>HoverDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HTML5__Demo.aspx.cs">
+      <DependentUpon>HTML5__Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HTML5__Demo.aspx.designer.cs">
+      <DependentUpon>HTML5__Demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IE6IE7Test.aspx.cs">
+      <DependentUpon>IE6IE7Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IE6IE7Test.aspx.designer.cs">
+      <DependentUpon>IE6IE7Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="IE_Select_Focus.aspx.cs">
+      <DependentUpon>IE_Select_Focus.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="IE_Select_Focus.aspx.designer.cs">
+      <DependentUpon>IE_Select_Focus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="iFrameTest.aspx.cs">
+      <DependentUpon>iFrameTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="iFrameTest.aspx.designer.cs">
+      <DependentUpon>iFrameTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ImageResizer.aspx.cs">
+      <DependentUpon>ImageResizer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ImageResizer.aspx.designer.cs">
+      <DependentUpon>ImageResizer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jq-proxy.aspx.cs">
+      <DependentUpon>jq-proxy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jq-proxy.aspx.designer.cs">
+      <DependentUpon>jq-proxy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Jquery_Clone_Demo.aspx.cs">
+      <DependentUpon>Jquery_Clone_Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Jquery_Clone_Demo.aspx.designer.cs">
+      <DependentUpon>Jquery_Clone_Demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jq_customEvents.aspx.cs">
+      <DependentUpon>jq_customEvents.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jq_customEvents.aspx.designer.cs">
+      <DependentUpon>jq_customEvents.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JQ_getScriptDemo.aspx.cs">
+      <DependentUpon>JQ_getScriptDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JQ_getScriptDemo.aspx.designer.cs">
+      <DependentUpon>JQ_getScriptDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JQ_IterationTypes.aspx.cs">
+      <DependentUpon>JQ_IterationTypes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JQ_IterationTypes.aspx.designer.cs">
+      <DependentUpon>JQ_IterationTypes.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JQ_ParseJson__Demo.aspx.cs">
+      <DependentUpon>JQ_ParseJson__Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JQ_ParseJson__Demo.aspx.designer.cs">
+      <DependentUpon>JQ_ParseJson__Demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jq_proxy.aspx.cs">
+      <DependentUpon>jq_proxy.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jq_proxy.aspx.designer.cs">
+      <DependentUpon>jq_proxy.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="jq_utility.aspx.cs">
+      <DependentUpon>jq_utility.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="jq_utility.aspx.designer.cs">
+      <DependentUpon>jq_utility.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSClassDemo.aspx.cs">
+      <DependentUpon>JSClassDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSClassDemo.aspx.designer.cs">
+      <DependentUpon>JSClassDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSCoordinateSample.aspx.cs">
+      <DependentUpon>JSCoordinateSample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSCoordinateSample.aspx.designer.cs">
+      <DependentUpon>JSCoordinateSample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS_AJAX.aspx.cs">
+      <DependentUpon>JS_AJAX.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS_AJAX.aspx.designer.cs">
+      <DependentUpon>JS_AJAX.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS_AJAX_Analysis.aspx.cs">
+      <DependentUpon>JS_AJAX_Analysis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS_AJAX_Analysis.aspx.designer.cs">
+      <DependentUpon>JS_AJAX_Analysis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Js_AJAX_Infinite_Data_Pattern.aspx.cs">
+      <DependentUpon>Js_AJAX_Infinite_Data_Pattern.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Js_AJAX_Infinite_Data_Pattern.aspx.designer.cs">
+      <DependentUpon>Js_AJAX_Infinite_Data_Pattern.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS_Design\Constructor-Pattern.aspx.cs">
+      <DependentUpon>Constructor-Pattern.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS_Design\Constructor-Pattern.aspx.designer.cs">
+      <DependentUpon>Constructor-Pattern.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS_Design\Revealing_Pattern.aspx.cs">
+      <DependentUpon>Revealing_Pattern.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS_Design\Revealing_Pattern.aspx.designer.cs">
+      <DependentUpon>Revealing_Pattern.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JS_UpdatePanel_Persistence.aspx.cs">
+      <DependentUpon>JS_UpdatePanel_Persistence.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JS_UpdatePanel_Persistence.aspx.designer.cs">
+      <DependentUpon>JS_UpdatePanel_Persistence.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="KeyPress.aspx.cs">
+      <DependentUpon>KeyPress.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="KeyPress.aspx.designer.cs">
+      <DependentUpon>KeyPress.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Knockout\demo1.aspx.cs">
+      <DependentUpon>demo1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Knockout\demo1.aspx.designer.cs">
+      <DependentUpon>demo1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Knockout\demo2.aspx.cs">
+      <DependentUpon>demo2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Knockout\demo2.aspx.designer.cs">
+      <DependentUpon>demo2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Mask_CC.aspx.cs">
+      <DependentUpon>Mask_CC.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mask_CC.aspx.designer.cs">
+      <DependentUpon>Mask_CC.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ModuleClassDemo.cs" />
+    <Compile Include="MyExpressionForSeason.cs" />
+    <Compile Include="MyExtensions.cs" />
+    <Compile Include="NeoDynamicImageResize.aspx.cs">
+      <DependentUpon>NeoDynamicImageResize.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="NeoDynamicImageResize.aspx.designer.cs">
+      <DependentUpon>NeoDynamicImageResize.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="notepad_app.aspx.cs">
+      <DependentUpon>notepad_app.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="notepad_app.aspx.designer.cs">
+      <DependentUpon>notepad_app.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OO__JS__Demo.aspx.cs">
+      <DependentUpon>OO__JS__Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OO__JS__Demo.aspx.designer.cs">
+      <DependentUpon>OO__JS__Demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="OutputCachingDemo.aspx.cs">
+      <DependentUpon>OutputCachingDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="OutputCachingDemo.aspx.designer.cs">
+      <DependentUpon>OutputCachingDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PartialClassDemo.aspx.cs">
+      <DependentUpon>PartialClassDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PartialClassDemo.aspx.designer.cs">
+      <DependentUpon>PartialClassDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PlayWithHTMLEncode.aspx.cs">
+      <DependentUpon>PlayWithHTMLEncode.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PlayWithHTMLEncode.aspx.designer.cs">
+      <DependentUpon>PlayWithHTMLEncode.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PreloadingImages.aspx.cs">
+      <DependentUpon>PreloadingImages.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PreloadingImages.aspx.designer.cs">
+      <DependentUpon>PreloadingImages.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ProjectDrawDemo.aspx.cs">
+      <DependentUpon>ProjectDrawDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ProjectDrawDemo.aspx.designer.cs">
+      <DependentUpon>ProjectDrawDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="InTheWoods.aspx.cs">
+      <DependentUpon>InTheWoods.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="InTheWoods.aspx.designer.cs">
+      <DependentUpon>InTheWoods.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="DesignPattern.aspx.cs">
+      <DependentUpon>DesignPattern.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DesignPattern.aspx.designer.cs">
+      <DependentUpon>DesignPattern.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Protected_test.aspx.cs">
+      <DependentUpon>Protected_test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Protected_test.aspx.designer.cs">
+      <DependentUpon>Protected_test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Prototype-Design.aspx.cs">
+      <DependentUpon>Prototype-Design.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Prototype-Design.aspx.designer.cs">
+      <DependentUpon>Prototype-Design.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="RegisterArrayDeclaration_Demo.aspx.cs">
+      <DependentUpon>RegisterArrayDeclaration_Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RegisterArrayDeclaration_Demo.aspx.designer.cs">
+      <DependentUpon>RegisterArrayDeclaration_Demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Sample.aspx.cs">
+      <DependentUpon>Sample.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Sample.aspx.designer.cs">
+      <DependentUpon>Sample.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Spinner.aspx.cs">
+      <DependentUpon>Spinner.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Spinner.aspx.designer.cs">
+      <DependentUpon>Spinner.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StarBucks\Decorator_Pattern.aspx.cs">
+      <DependentUpon>Decorator_Pattern.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StarBucks\Decorator_Pattern.aspx.designer.cs">
+      <DependentUpon>Decorator_Pattern.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Survey_Research.aspx.cs">
+      <DependentUpon>Survey_Research.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Survey_Research.aspx.designer.cs">
+      <DependentUpon>Survey_Research.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TableDemo.aspx.cs">
+      <DependentUpon>TableDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TableDemo.aspx.designer.cs">
+      <DependentUpon>TableDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Timer.aspx.cs">
+      <DependentUpon>Timer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Timer.aspx.designer.cs">
+      <DependentUpon>Timer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="TimerJSBased.aspx.cs">
+      <DependentUpon>TimerJSBased.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="TimerJSBased.aspx.designer.cs">
+      <DependentUpon>TimerJSBased.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Tutsplus\Day3.aspx.cs">
+      <DependentUpon>Day3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Tutsplus\Day3.aspx.designer.cs">
+      <DependentUpon>Day3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Underscore__Demo.aspx.cs">
+      <DependentUpon>Underscore__Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Underscore__Demo.aspx.designer.cs">
+      <DependentUpon>Underscore__Demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UP_AsyncPostback.aspx.cs">
+      <DependentUpon>UP_AsyncPostback.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UP_AsyncPostback.aspx.designer.cs">
+      <DependentUpon>UP_AsyncPostback.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="URLEncode_Demo.aspx.cs">
+      <DependentUpon>URLEncode_Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="URLEncode_Demo.aspx.designer.cs">
+      <DependentUpon>URLEncode_Demo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ValignTest.aspx.cs">
+      <DependentUpon>ValignTest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ValignTest.aspx.designer.cs">
+      <DependentUpon>ValignTest.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStateContainer.aspx.cs">
+      <DependentUpon>ViewStateContainer.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewStateContainer.aspx.designer.cs">
+      <DependentUpon>ViewStateContainer.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStatePage1.aspx.cs">
+      <DependentUpon>ViewStatePage1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewStatePage1.aspx.designer.cs">
+      <DependentUpon>ViewStatePage1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewStatePage2.aspx.cs">
+      <DependentUpon>ViewStatePage2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewStatePage2.aspx.designer.cs">
+      <DependentUpon>ViewStatePage2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebForm1.aspx.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="WebForm1.aspx.designer.cs">
+      <DependentUpon>WebForm1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="JSReplaceDemo.aspx.cs">
+      <DependentUpon>JSReplaceDemo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="JSReplaceDemo.aspx.designer.cs">
+      <DependentUpon>JSReplaceDemo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="WebService1.asmx.cs">
+      <DependentUpon>WebService1.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Yield_Demo.aspx.cs">
+      <DependentUpon>Yield_Demo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Yield_Demo.aspx.designer.cs">
+      <DependentUpon>Yield_Demo.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="b.json" />
+    <None Include="DataSet2.xsc">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataSet2.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSet2.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSet2.xss">
+      <DependentUpon>DataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="development-bundle\demos\autocomplete\search.php" />
+    <None Include="development-bundle\demos\tabs\ajax\content3-slow.php" />
+    <None Include="development-bundle\demos\tabs\ajax\content4-broken.php" />
+    <None Include="development-bundle\package.json" />
+    <None Include="lib\bin\eong.jar.pack.gz" />
+    <None Include="lib\bin\optional\barcode.jar.pack.gz" />
+    <None Include="lib\bin\optional\mathml.jar.pack.gz" />
+    <None Include="lib\bin\optional\svg.jar.pack.gz" />
+    <None Include="lib\config\config.json" />
+    <None Include="lib\config\structureTemplates.json" />
+    <None Include="lib\config\uiconfig.json" />
+    <None Include="lib\icons\Thumbs.db" />
+    <None Include="lib\locale\de-DE.json" />
+    <None Include="lib\locale\en-US.json" />
+    <None Include="lib\locale\fr-FR.json" />
+    <None Include="lib\spellcheck\american-thesaurus.zip" />
+    <None Include="lib\spellcheck\american.zip" />
+    <None Include="lib\spellcheck\americanenglish.zip" />
+    <None Include="lib\spellcheck\brazilian.zip" />
+    <None Include="lib\spellcheck\british-thesaurus.zip" />
+    <None Include="lib\spellcheck\british.zip" />
+    <None Include="lib\spellcheck\brlegal.zip" />
+    <None Include="lib\spellcheck\brmed.zip" />
+    <None Include="lib\spellcheck\canadian-thesaurus.zip" />
+    <None Include="lib\spellcheck\canadianenglish.zip" />
+    <None Include="lib\spellcheck\danish.zip" />
+    <None Include="lib\spellcheck\dutch.zip" />
+    <None Include="lib\spellcheck\finnish.zip" />
+    <None Include="lib\spellcheck\french.zip" />
+    <None Include="lib\spellcheck\german-new.zip" />
+    <None Include="lib\spellcheck\italian.zip" />
+    <None Include="lib\spellcheck\norwegian.zip" />
+    <None Include="lib\spellcheck\portuguese.zip" />
+    <None Include="lib\spellcheck\spanish.zip" />
+    <None Include="lib\spellcheck\swedish.zip" />
+    <None Include="lib\spellcheck\uslegal.zip" />
+    <None Include="lib\spellcheck\usmed.zip" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Football\" />
+    <Folder Include="resizeImages\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>3221</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost/JQueryLearning</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
