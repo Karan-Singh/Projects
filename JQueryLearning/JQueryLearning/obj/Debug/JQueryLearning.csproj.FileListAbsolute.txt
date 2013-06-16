@@ -25,3 +25,8 @@ F:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Debug\Decl\JQueryLearning.pd
 F:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Debug\JQueryLearningccrefgen.rsp
 F:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Debug\JQueryLearning.rewritten
 F:\Karan\Projects\JQueryLearning\JQueryLearning\obj\Debug\JQueryLearning.csprojResolveAssemblyReference.cache
+K:\Karan\Projects\Projects\JQueryLearning\JQueryLearning\obj\Debug\JQueryLearning.csprojResolveAssemblyReference.cache
+K:\Karan\Projects\Projects\JQueryLearning\JQueryLearning\bin\JQueryLearning.dll
+K:\Karan\Projects\Projects\JQueryLearning\JQueryLearning\bin\JQueryLearning.pdb
+K:\Karan\Projects\Projects\JQueryLearning\JQueryLearning\obj\Debug\JQueryLearning.dll
+K:\Karan\Projects\Projects\JQueryLearning\JQueryLearning\obj\Debug\JQueryLearning.pdb
